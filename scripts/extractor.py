@@ -1,6 +1,7 @@
 import requests
 import re
 import textwrap
+import os
 
 API_KEY = "d17af68828b64225260e4828503f98f9"
 BASE_URL = "https://api.themoviedb.org/3"
@@ -49,14 +50,18 @@ def obtener_detalles(id_obra, tipo):
 
 
 def generar_bloque_js(datos, tipo):
-    """Genera el bloque JS formateado para película o serie."""
+    """Genera el bloque JS formateado para película o serie, incluyendo fecha."""
     if tipo == "movie":
         titulo = datos.get("title", "Desconocido").replace('"', '\\"')
         duracion = f"{datos.get('runtime', 0)} min"
+        fecha = datos.get("release_date", "Desconocida")
+        tipo_formato = "Película"
     else:  # serie
         titulo = datos.get("name", "Desconocido").replace('"', '\\"')
         temporadas = datos.get("number_of_seasons", 0)
         episodios = datos.get("number_of_episodes", 0)
+        fecha = datos.get("first_air_date", "Desconocida")
+        tipo_formato = "Serie"
         if temporadas == 1:
             duracion = f"{episodios} episodios"
         else:
@@ -71,36 +76,69 @@ def generar_bloque_js(datos, tipo):
     bloque_js = f"""
     {{
         titulo: "{titulo}",
+        tipo: "{tipo_formato}",
         sinopsis: `{sinopsis}`,
         genero: {generos},
         calificacion: {calificacion},
         duracion: "{duracion}",
         elenco: {elenco},
         portada: "{portada}",
-        enlaceTelegram: "https://t.me/vanacue/"
+        enlaceTelegram: "https://t.me/vanacue/",
+        fecha: "{fecha}"
     }},
     """
     return textwrap.dedent(bloque_js).strip()
 
 
-# === Ejecución principal ===
+# === Función principal ===
+
+def procesar_entrada(entrada):
+    """Detecta si la entrada es un archivo .txt o una sola URL."""
+    if entrada.endswith(".txt") and os.path.exists(entrada):
+        with open(entrada, "r", encoding="utf-8") as f:
+            return [line.strip() for line in f if line.strip()], True
+    else:
+        return [entrada.strip()], False
+
 
 if __name__ == "__main__":
-    entrada = input("🎬 Ingresa el nombre, ID o URL de la obra (película o serie): ").strip()
-    id_o_nombre, tipo = obtener_id_y_tipo(entrada)
+    entrada = input("🎬 Ingresa la URL o el nombre del archivo .txt: ").strip()
+    entradas, es_archivo = procesar_entrada(entrada)
 
-    if isinstance(id_o_nombre, int):
-        detalles = obtener_detalles(id_o_nombre, tipo)
-        bloque_js = generar_bloque_js(detalles, tipo)
-        print("\n✅ Bloque listo para pegar en tu index.js:\n")
-        print(bloque_js)
+    bloques = []
 
-    else:
-        resultado = buscar_obra(id_o_nombre, tipo)
-        if resultado:
-            detalles = obtener_detalles(resultado["id"], tipo)
+    for url in entradas:
+        id_o_nombre, tipo = obtener_id_y_tipo(url)
+
+        if isinstance(id_o_nombre, int):
+            print(f"🔍 Extrayendo datos de {tipo.upper()} con ID {id_o_nombre}...")
+            detalles = obtener_detalles(id_o_nombre, tipo)
             bloque_js = generar_bloque_js(detalles, tipo)
-            print("\n✅ Bloque listo para pegar en tu index.js:\n")
-            print(bloque_js)
+            bloques.append(bloque_js)
         else:
-            print("❌ No se encontró ningún resultado.")
+            resultado = buscar_obra(id_o_nombre, tipo)
+            if resultado:
+                nombre_encontrado = resultado.get("title") or resultado.get("name")
+                print(f"🔍 Buscando detalles de {nombre_encontrado}...")
+                detalles = obtener_detalles(resultado["id"], tipo)
+                bloque_js = generar_bloque_js(detalles, tipo)
+                bloques.append(bloque_js)
+            else:
+                print(f"❌ No se encontró: {id_o_nombre}")
+
+    # Si la entrada era un archivo, guarda los resultados
+    if es_archivo:
+        if bloques:
+            salida = "bloques_extraidos.txt"
+            with open(salida, "w", encoding="utf-8") as f:
+                f.write("\n\n".join(bloques))
+            print(f"\n✅ Bloques listos y guardados en: {salida}")
+        else:
+            print("⚠️ No se generaron bloques válidos.")
+    else:
+        # Si es solo una URL o nombre, imprime el bloque directamente
+        if bloques:
+            print("\n🧩 Bloque generado:\n")
+            print(bloques[0])
+        else:
+            print("⚠️ No se generó ningún bloque.")
