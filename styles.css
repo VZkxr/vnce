@@ -1,0 +1,262 @@
+/* === ESTILOS GENERALES === */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* evita scroll horizontal */
+  font-family: "Poppins", sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  padding: 1rem 0;
+  background: linear-gradient(90deg, #1a1a1a, #111);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* === MENUBAR ESTILO NETFLIX === */
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e50914; /* Rojo estilo Netflix */
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon {
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+/* === HAMBURGUESA === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+/* === CARRUSEL === */
+.carrusel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1.5rem;
+  scroll-behavior: smooth;
+}
+
+.carrusel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+/* === CARRUSEL BOTONES OCULTOS POR DEFECTO === */
+.carrusel-container {
+  position: relative; /* esto es esencial */
+  padding: 1rem 0;
+  margin: 0 auto;     /* opcional: centrar en la pantalla */
+  max-width: 1200px;  /* opcional: limitar ancho del carrusel */
+}
+
+.scroll-btn {
+  position: absolute;  /* relativo a .carrusel-container */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.6);
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s, opacity 0.3s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carrusel-container:hover .scroll-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-btn:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.scroll-btn.left {
+  left: 0px;  /* un poquito fuera para no tapar tarjetas */
+}
+
+.scroll-btn.right {
+  right: 0px;
+}
+
+
+/* Mantener tu carrusel existente */
+.carrusel {
+  padding: 1rem;
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  scroll-behavior: smooth;
+
+  /* ocultar scrollbar */
+  -ms-overflow-style: none;  /* IE y Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.carrusel::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari y Opera */
+}
+
+.carrusel::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 10px;
+}
+
+/* === TARJETAS === */
+.tarjeta {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.tarjeta:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.contenido {
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.contenido h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.contenido p {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin: 0.2rem 0;
+}
+
+.descripcion {
+  display: none;
+}
+
+/* Mostrar siempre flechas en pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+  .scroll-btn {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .carrusel-container:hover .scroll-btn {
+    opacity: 1; /* hover sigue funcionando, no afecta */
+  }
+}
+
+/* Títulos de secciones */
+.seccion-catalogo h2 {
+  margin: 0 0 0 30px;  /* margen izquierdo de 15px, margen inferior 0 */
+  font-size: 1.5rem;
+  color: #fff;
+}
