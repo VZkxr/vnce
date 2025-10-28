@@ -8,24 +8,162 @@ body {
   color: #fff;
 }
 
+.menubar {
+  margin: 0;
+  padding-top: 0.3rem; /* puedes mantener este si te gusta el espacio interno */
+  padding-bottom: 0.3rem;
+}
+
+/* === HERO SECTION (Portada principal tipo Netflix) === */
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  background-color: #0e0e0e; /* color base para cuando la imagen se haga transparente */
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantiene proporción y cubre todo */
+  filter: brightness(90%); /* oscurece un poco para resaltar texto */
+
+  /* --- máscara principal: fade a transparente desde 60% hasta 100% --- */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+
+  /* Para mayor suavidad en algunos navegadores */
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%; /* ajustar según lo suave que quieras el fundido */
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(14,14,14,0) 0%,
+    rgba(14,14,14,0.15) 30%,
+    rgba(14,14,14,0.45) 65%,
+    #0e0e0e 100%
+  );
+}
+
+/* Contenido encima de la portada */
+.hero-content {
+  position: absolute;
+  bottom: 25%;
+  left: 4rem;
+  color: #fff;
+  z-index: 10;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+}
+
+.hero-btn {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #f40612;
+}
+
 header {
+  display: contents;
   text-align: center;
   padding: 1rem 0;
-  background: linear-gradient(90deg, #1a1a1a, #111);
+  background: transparent;
   font-size: 1.5rem;
   letter-spacing: 1px;
 }
 
+.header-seccion {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* separación pequeña entre botón y título */
+  margin-bottom: 0rem; /* pegado al carrusel */
+}
+
+.explorar-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #e50914; /* rojo estilo Netflix */
+  overflow: hidden;
+  transform: translateY(9px);
+
+  
+  padding: 0.3rem 0.6rem; /* añade área alrededor del símbolo/texto */
+  border-radius: 4px;     /* opcional: suaviza los bordes de la zona activa */
+}
+
+.explorar-btn .simbolo {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.explorar-btn .texto {
+  display: inline-block;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  white-space: nowrap;
+  margin-left: 0.2rem;
+  color: #e50914; /* rojo también para el texto */
+}
+
+.explorar-btn:hover .simbolo {
+  opacity: 0;              /* desaparece */
+  transform: translateX(-10px); /* opcional, un pequeño movimiento al desaparecer */
+}
+
+.explorar-btn:hover .texto {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
 /* === MENUBAR ESTILO NETFLIX === */
 .menubar {
+  position: fixed;        
+  top: 0;
+  left: 0;
+  width: 100%;               /* ocupa todo el ancho */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.3rem 1.5rem;
-  background-color: transparent;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  background-color: transparent; /* transparente estilo Netflix */
+  z-index: 1000;                         /* por encima de todo */
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 
 .menu-left {

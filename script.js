@@ -127,9 +127,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const seccionDiv = document.createElement("div");
     seccionDiv.classList.add("seccion-catalogo");
 
+    // Crear contenedor del título y el botón
+    const headerSeccion = document.createElement("div");
+    headerSeccion.classList.add("header-seccion");
+
+    // Crear botón "Explorar todo >" con estructura interna
+    const explorarBtn = document.createElement("div");
+    explorarBtn.classList.add("explorar-btn");
+    explorarBtn.innerHTML = `<span class="simbolo">&#10148;</span><span class="texto">Explorar todo &#10148;</span>`
+
+    // Crear título de la sección
     const tituloSeccion = document.createElement("h2");
     tituloSeccion.textContent = seccion;
-    seccionDiv.appendChild(tituloSeccion);
+
+    // Agregar botón y título al contenedor
+    headerSeccion.appendChild(tituloSeccion);
+    headerSeccion.appendChild(explorarBtn);  // se superpone sobre el título
+
+    // Agregar al div de la sección
+    seccionDiv.appendChild(headerSeccion);
 
     const contenedorCarrusel = document.createElement("div");
     contenedorCarrusel.classList.add("carrusel-container");
