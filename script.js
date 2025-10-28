@@ -106,10 +106,22 @@ document.addEventListener("DOMContentLoaded", () => {
       enlaceTelegram: "https://t.me/vanacue/",
       fecha: "2022-06-16"
     },
+    {
+      titulo: "Gran Hotel",
+      tipo: "Serie",
+      sinopsis: `Para descubrir la verdad sobre la misteriosa desaparición de su hermana, un joven se infiltra en un hotel disfrazado de sirviente y comienza a investigar.`,
+      genero: ['Drama', 'Misterio', 'Crimen'],
+      calificacion: 7.722,
+      duracion: "3 temporadas",
+      elenco: ['Adriana Ozores', 'Amaia Salamanca', 'Yon González', 'Eloy Azorín', 'Fele Martínez'],
+      portada: "https://image.tmdb.org/t/p/original/hAEWiDY5trfg0JRVaGGyea6Cepk.jpg",
+      enlaceTelegram: "https://t.me/vanacue/",
+      fecha: "2011-05-10"
+    },
   ];
 
   // Secciones
-  const secciones = ["Recién agregadas", "Terror", "Acción", "Romance", "Comedia", "Drama", "Animación", "Suspense"];
+  const secciones = ["Recién agregadas", "Terror", "Acción", "Romance", "Comedia", "Drama", "Animación", "Suspenso"];
 
   secciones.forEach(seccion => {
     const seccionDiv = document.createElement("div");
@@ -132,12 +144,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const carrusel = document.createElement("div");
     carrusel.classList.add("carrusel");
 
-    // Filtrar según sección
+    // Filtrar según sección y mantener orden descendente
     let peliculasSeccion = [];
     if(seccion === "Recién agregadas"){
-      peliculasSeccion = catalogoPeliculas.sort((a,b)=> new Date(b.fecha || Date.now()) - new Date(a.fecha || Date.now())).slice(0,6);
+      peliculasSeccion = catalogoPeliculas.slice(-8).reverse(); // últimas 8 en orden descendente
+    } else if(seccion === "Suspenso"){
+      // Mapeamos todas las películas que tengan "Suspense" a esta sección
+      peliculasSeccion = catalogoPeliculas
+        .filter(p => p.genero.includes("Suspense"))
+        .slice(-8)
+        .reverse();
     } else {
-      peliculasSeccion = catalogoPeliculas.filter(p => p.genero.includes(seccion)).slice(0,6);
+      peliculasSeccion = catalogoPeliculas
+        .filter(p => p.genero.includes(seccion))
+        .slice(-8)           // tomar las últimas 8 de esa sección
+        .reverse();           // invertir para orden descendente
     }
 
     // Crear tarjetas (solo portada, título y géneros visibles)
