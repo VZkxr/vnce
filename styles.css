@@ -67,10 +67,14 @@ body {
   z-index: 10;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
+.hero-logo {
+  width: 60%;
+  max-width: 1500px;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.6));
+  animation: fadeInUp 1s ease forwards;
 }
 
 .hero-subtitle {
