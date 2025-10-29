@@ -392,12 +392,36 @@ header {
 
 /* === RESPONSIVE === */
 @media screen and (max-width: 768px) {
-  .menubar {
-    padding: 0.3rem 1.5rem;
+  .hero {
+    height: 90vh; /* un poco menos de altura para móviles */
   }
 
-  .carrusel {
-    padding: 0 1rem; /* un poco menos padding en móviles */
+  .hero-content {
+    bottom: 15%;
+    left: 1.5rem;
+    right: 1.5rem;
+    text-align: center;
+  }
+
+  .hero-logo {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #ddd;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .menubar {
+    padding: 0.3rem 1.5rem;
   }
 
   .logo {
@@ -408,32 +432,8 @@ header {
     height: 20px;
   }
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background-color: #111;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
-    padding: 1rem 0;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .scroll-btn {
-    opacity: 1;
-    pointer-events: auto;
-  }
-
-  .carrusel-container:hover .scroll-btn {
-    opacity: 1; /* hover sigue funcionando, no afecta */
   }
 }
