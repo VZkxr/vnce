@@ -435,5 +435,6 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    font-size: 1rem;
   }
 }
