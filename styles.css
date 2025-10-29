@@ -422,10 +422,11 @@ header {
 
   
   .logo {
-    height: 32px;
+    height: 35px;
+    margin-left: -1.5rem;
   }
   
-  .menu-left,
+  .menu-left
   .menu-right,
   .nav-links {
     flex-wrap: nowrap;       /* evita que los elementos se bajen a otra fila */
@@ -434,9 +435,24 @@ header {
   .nav-links {
     gap: 0.7rem;             /* reduce la separación entre links */
     font-size: 1rem;         /* reduce tamaño de texto para que quepa */
+    margin-left: -1.7rem;
   }
 
   .menu-right .icon {
     height: 18px;            /* un poco más pequeño para caber en fila */
+    margin-left: 0.5rem;
   }
+
+    /* Ocultar flechas de scroll en móviles */
+  .scroll-btn {
+    display: none !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .carrusel-container:hover .scroll-btn {
+    opacity: 0 !important;
+    pointer-events: none !important;
+  }
+
 }
