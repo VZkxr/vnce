@@ -420,21 +420,23 @@ header {
     padding: 0.6rem 1.2rem;
   }
 
-  .menubar {
-    padding: 0.3rem 1.5rem;
-  }
-
+  
   .logo {
     height: 32px;
   }
-
-  .icon {
-    height: 20px;
-  }
+  
+  .menu-left,
+  .menu-right,
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    font-size: 1rem;
+    flex-wrap: nowrap;       /* evita que los elementos se bajen a otra fila */
+  }
+
+  .nav-links {
+    gap: 0.7rem;             /* reduce la separación entre links */
+    font-size: 1rem;         /* reduce tamaño de texto para que quepa */
+  }
+
+  .menu-right .icon {
+    height: 18px;            /* un poco más pequeño para caber en fila */
   }
 }
