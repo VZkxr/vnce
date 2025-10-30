@@ -588,3 +588,115 @@ header {
   }
 
 }
+
+/* === GRID DE GÉNERO === */
+.genero-main {
+  padding: 6rem 2rem 3rem; /* deja espacio para el menú fijo */
+}
+
+#titulo-genero {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.grid-genero {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+/* === AJUSTE FINAL DE TAMAÑO Y TÍTULOS EN GRID DE GÉNERO === */
+
+/* Tarjetas más grandes y con texto visible */
+/* Tarjetas más grandes y con espacio reservado para el texto */
+.grid-genero .tarjeta {
+  width: 100%;
+  aspect-ratio: auto;       /* libera la restricción vertical */
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;   /* imagen arriba, texto abajo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-genero .tarjeta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+/* Imagen completa, sin recorte */
+.grid-genero .tarjeta img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  flex-shrink: 0;
+}
+
+/* Contenedor de texto debajo de la imagen */
+.grid-genero .contenido {
+  padding: 0.5rem 0.4rem 0.7rem;
+  text-align: center;
+}
+
+.grid-genero .contenido h3 {
+  margin: 0.4rem 0 0.2rem;
+  font-size: 0.9rem;
+  color: #fff;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  white-space: normal; /* permite 2 líneas si el título es largo */
+  line-height: 1.2;
+}
+
+.grid-genero .contenido p {
+  font-size: 0.75rem;
+  color: #bbb;
+  margin: 0;
+}
+
+/* Escalado limpio para pantallas pequeñas */
+@media (max-width: 900px) {
+  .grid-genero {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .grid-genero .tarjeta {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-genero {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.8rem;
+  }
+  .grid-genero .tarjeta {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-genero {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.7rem;
+  }
+  .grid-genero .tarjeta {
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 380px) {
+  .grid-genero {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7rem;
+  }
+  .grid-genero .tarjeta {
+    max-width: 120px;
+  }
+}

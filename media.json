@@ -1,0 +1,110 @@
+[
+  {
+    "titulo": "Superman",
+    "tipo": "Película",
+    "sinopsis": "Mientras el mundo pierde la fe en la bondad, Clark Kent, un periodista en Metrópolis, se embarca en un viaje para reconciliar su herencia kryptoniana con su educación humana como Superman.",
+    "genero": ["Ciencia ficción", "Aventura", "Acción"],
+    "calificacion": 7.4,
+    "duracion": "129 min",
+    "elenco": ["David Corenswet", "Rachel Brosnahan", "Nicholas Hoult", "Edi Gathegi", "Nathan Fillion"],
+    "portada": "https://image.tmdb.org/t/p/original/fvUJb08yatV2b3NUSwuYdQKYoFd.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "2025-07-09"
+  },
+  {
+    "titulo": "Eliminar Amigo",
+    "tipo": "Película",
+    "sinopsis": "Mientras están chateando una noche, seis amigos reciben por Skype un mensaje de Laura Barns, una joven estudiante que se había suicidado un año antes tras ser humillada en Internet por un video sexual en el que aparecía borracha una noche. Al principio los amigos piensan que es una broma, pero cuando la persona con la que chatean comienza a revelar sus secretos más íntimos, se dan cuenta de que el asunto es grave.",
+    "genero": ["Terror", "Misterio"],
+    "calificacion": 5.538,
+    "duracion": "82 min",
+    "elenco": ["Shelley Hennig", "Heather Sossaman", "Renee Olstead", "Matthew Bohrer", "Moses Storm"],
+    "portada": "https://image.tmdb.org/t/p/original/pzxHNiKjHL8Sz7DZ7POXXqohxet.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "2014-10-22"
+  },
+  {
+    "titulo": "Narcos: México",
+    "tipo": "Serie",
+    "sinopsis": "Cuenta la historia real del ascenso al poder del cártel de Guadalajara, liderado por Miguel Ángel Félix Gallardo (Diego Luna), y el inicio de las guerras de la droga en el México de los años 80.",
+    "genero": ["Drama", "Crimen"],
+    "calificacion": 7.9,
+    "duracion": "3 temporadas",
+    "elenco": ["Scoot McNairy", "José María Yázpik", "Alejandro Edda", "Luis Gerardo Méndez", "Matt Letscher"],
+    "portada": "https://image.tmdb.org/t/p/original/yCid4sQkaVzfa2y4yQWs5E0TES9.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "2018-11-16"
+  },
+  {
+    "titulo": "La Oficina",
+    "tipo": "Serie",
+    "sinopsis": "La vida diaria de los empleados de una oficina de una compañía papelera localizada en Scranton, Pensilvania.",
+    "genero": ["Comedia"],
+    "calificacion": 8.585,
+    "duracion": "9 temporadas",
+    "elenco": ["Rainn Wilson", "John Krasinski", "Jenna Fischer", "Ed Helms"],
+    "portada": "https://image.tmdb.org/t/p/original/xMtiEEQ8ajtTkEvpftrIGsdmonz.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "2005-03-24"
+  },
+  {
+    "titulo": "París, Texas",
+    "tipo": "Película",
+    "sinopsis": "Un hombre camina por el desierto de Texas sin recordar quién es. Su hermano lo busca e intenta que recuerde cómo era su vida cuatro años antes, cuando abandonó a su mujer y a su hijo.",
+    "genero": ["Drama", "Romance"],
+    "calificacion": 8.093,
+    "duracion": "145 min",
+    "elenco": ["Harry Dean Stanton", "Nastassja Kinski", "Dean Stockwell", "Hunter Carson", "Aurore Clément"],
+    "portada": "https://image.tmdb.org/t/p/original/ba8edzVOul1uDHaLgDImALqhsN1.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "1984-07-16"
+  },
+  {
+    "titulo": "Mascotas al Rescate",
+    "tipo": "Película",
+    "sinopsis": "Un tren se pone en marcha con animales de compañía atrapados a bordo, liderados por un mapache astuto que intentará salvarlos.",
+    "genero": ["Animación", "Comedia", "Aventura"],
+    "calificacion": 7.0,
+    "duracion": "87 min",
+    "elenco": ["Damien Ferrette", "Hervé Jolly", "Kaycie Chase", "Frantz Confiac", "Emmanuel Garijo"],
+    "portada": "https://image.tmdb.org/t/p/original/7B22kTVnkXhpKhaKDGOQ7bIvDXW.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "2025-07-02"
+  },
+  {
+    "titulo": "Los tipos malos 2",
+    "tipo": "Película",
+    "sinopsis": "Un grupo de animales reformados se ven envueltos en un gran golpe criminal mundial.",
+    "genero": ["Familia", "Comedia", "Crimen", "Aventura", "Animación"],
+    "calificacion": 7.8,
+    "duracion": "104 min",
+    "elenco": ["Sam Rockwell", "Marc Maron", "Awkwafina", "Craig Robinson", "Anthony Ramos"],
+    "portada": "https://image.tmdb.org/t/p/original/mZmnKDhIS2yNmtfzde5vtdCYzBF.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "2025-07-24"
+  },
+  {
+    "titulo": "El teléfono negro",
+    "tipo": "Película",
+    "sinopsis": "Un niño secuestrado por un asesino descubre que un teléfono desconectado le permite comunicarse con las víctimas anteriores.",
+    "genero": ["Terror", "Suspense"],
+    "calificacion": 7.552,
+    "duracion": "103 min",
+    "elenco": ["Mason Thames", "Ethan Hawke", "Madeleine McGraw", "Jeremy Davies", "E. Roger Mitchell"],
+    "portada": "https://image.tmdb.org/t/p/original/1D2R2wIgbTyXTPzmyJIKSbVN9wG.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "2022-06-16"
+  },
+  {
+    "titulo": "Gran Hotel",
+    "tipo": "Serie",
+    "sinopsis": "Un joven se infiltra en un hotel para descubrir la verdad sobre la desaparición de su hermana.",
+    "genero": ["Drama", "Misterio", "Crimen"],
+    "calificacion": 7.722,
+    "duracion": "3 temporadas",
+    "elenco": ["Adriana Ozores", "Amaia Salamanca", "Yon González", "Eloy Azorín", "Fele Martínez"],
+    "portada": "https://image.tmdb.org/t/p/original/hAEWiDY5trfg0JRVaGGyea6Cepk.jpg",
+    "enlaceTelegram": "https://t.me/vanacue/",
+    "fecha": "2011-05-10"
+  }
+]
