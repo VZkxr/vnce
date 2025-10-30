@@ -6,6 +6,16 @@ hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
+const heroCarrusel = document.querySelector(".hero-carrusel");
+const totalSlides = document.querySelectorAll(".hero-slide").length;
+let index = 0;
+
+setInterval(() => {
+  index = (index + 1) % totalSlides; // bucle infinito
+  heroCarrusel.style.transform = `translateX(-${index * 100}%)`;
+}, 5000); // cada 5 segundos
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const main = document.querySelector("main");
 
