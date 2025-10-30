@@ -123,6 +123,28 @@ body {
   background-color: #f40612;
 }
 
+.hero-dots {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.7rem;
+  z-index: 25;  /* encima de hero-content y hero-carrusel */
+}
+
+.hero-dots .dot {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.hero-dots .dot:hover {
+  transform: scale(1.3);
+}
+
+
 header {
   display: contents;
   text-align: center;
@@ -138,6 +160,54 @@ header {
   gap: 0.5rem; /* separación pequeña entre botón y título */
   margin-bottom: 0rem; /* pegado al carrusel */
 }
+
+/* Botones hero superpuestos */
+.hero-btn-left,
+.hero-btn-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;           /* ocultos por defecto */
+  pointer-events: none; /* no clickeables */
+}
+
+.hero:hover .hero-btn-left,
+.hero:hover .hero-btn-right {
+  opacity: 0.7;         /* visibles al hover */
+  pointer-events: auto; /* ahora clickeables */
+}
+
+.hero-btn-left:hover,
+.hero-btn-right:hover {
+  background-color: transparent;
+  transform: translateY(-50%) scale(1.5);
+  opacity: 1;
+}
+
+.hero-btn-left {
+  left: 1rem;
+}
+
+.hero-btn-right {
+  right: 1rem;
+}
+
+.hero-btn-left img,
+.hero-btn-right img {
+  width: 25px;
+  height: 25px;
+}
+
 
 .explorar-btn {
   position: relative;
@@ -354,7 +424,7 @@ header {
 }
 
 .tarjeta:hover {
-  transform: scale(1.08);
+  transform: scale(1.04);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 

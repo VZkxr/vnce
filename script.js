@@ -8,13 +8,58 @@ hamburger.addEventListener("click", () => {
 
 const heroCarrusel = document.querySelector(".hero-carrusel");
 const totalSlides = document.querySelectorAll(".hero-slide").length;
+
+const btnLeftHero = document.querySelector(".hero-btn-left");
+const btnRightHero = document.querySelector(".hero-btn-right");
+
 let index = 0;
+const dots = document.querySelectorAll(".hero-dots .dot");
 
-setInterval(() => {
-  index = (index + 1) % totalSlides; // bucle infinito
+function updateDots() {
+  dots.forEach((dot, i) => {
+    dot.src = i === index ? "Multimedia/circle_w.svg" : "Multimedia/circle.svg";
+  });
+}
+
+function goToSlide(i) {
+  index = i;
   heroCarrusel.style.transform = `translateX(-${index * 100}%)`;
-}, 5000); // cada 5 segundos
+  updateDots();
+  resetAutoplay();
+}
 
+// Autoplay con reinicio
+let autoplayTimeout;
+function startAutoplay() {
+  autoplayTimeout = setTimeout(() => {
+    index = (index + 1) % totalSlides;
+    goToSlide(index);
+  }, 5000);
+}
+
+function resetAutoplay() {
+  clearTimeout(autoplayTimeout);
+  startAutoplay();
+}
+
+// Inicializamos autoplay
+startAutoplay();
+
+// Flechas
+btnLeftHero.addEventListener("click", () => {
+  goToSlide((index - 1 + totalSlides) % totalSlides);
+});
+
+btnRightHero.addEventListener("click", () => {
+  goToSlide((index + 1) % totalSlides);
+});
+
+// Dots
+dots.forEach((dot, i) => {
+  dot.addEventListener("click", () => {
+    goToSlide(i);
+  });
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const main = document.querySelector("main");
