@@ -700,3 +700,45 @@ header {
     max-width: 120px;
   }
 }
+
+/* === AJUSTE DE TIPOGRAFÍA EN MODO RESPONSIVE PARA GRID DE GÉNERO === */
+
+/* Tablets medianas */
+@media (max-width: 900px) {
+  .grid-genero .contenido h3 {
+    font-size: 0.85rem;
+  }
+  .grid-genero .contenido p {
+    font-size: 0.7rem;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 700px) {
+  .grid-genero .contenido h3 {
+    font-size: 0.8rem;
+  }
+  .grid-genero .contenido p {
+    font-size: 0.68rem;
+  }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+  .grid-genero .contenido h3 {
+    font-size: 0.75rem;
+  }
+  .grid-genero .contenido p {
+    font-size: 0.65rem;
+  }
+}
+
+/* Muy pequeños (hasta 380px) */
+@media (max-width: 380px) {
+  .grid-genero .contenido h3 {
+    font-size: 0.7rem;
+  }
+  .grid-genero .contenido p {
+    font-size: 0.6rem;
+  }
+}
