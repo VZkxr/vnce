@@ -742,3 +742,58 @@ header {
     font-size: 0.6rem;
   }
 }
+
+/* === AJUSTE PARA VISTA RESPONSIVE DE 4 COLUMNAS === */
+@media (max-width: 1024px) {
+  .grid-genero {
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 1rem;
+  }
+
+  .grid-genero .tarjeta {
+    width: 100%;
+    max-width: none;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+  }
+
+  .grid-genero .tarjeta img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .grid-genero .contenido {
+    padding: 0.5rem 0.6rem 1rem;
+    text-align: center;
+  }
+
+  .grid-genero .contenido h3 {
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0.3rem;
+    line-height: 1.2;
+    color: #fff;
+  }
+
+  .grid-genero .contenido p {
+    font-size: 0.75rem;
+    color: #bbb;
+  }
+}
+
+/* === Optimización para pantallas más pequeñas === */
+@media (max-width: 600px) {
+  .grid-genero {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .grid-genero .contenido h3 {
+    font-size: 0.85rem;
+  }
+
+  .grid-genero .contenido p {
+    font-size: 0.7rem;
+  }
+}
