@@ -28,6 +28,31 @@ function goToSlide(i) {
   resetAutoplay();
 }
 
+// Swipe táctil para móviles
+let touchStartX = 0;
+let touchEndX = 0;
+const swipeThreshold = 50; // mínimo en px para considerar swipe
+
+heroCarrusel.addEventListener("touchstart", (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+heroCarrusel.addEventListener("touchmove", (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+});
+
+heroCarrusel.addEventListener("touchend", () => {
+  const deltaX = touchStartX - touchEndX;
+
+  if (deltaX > swipeThreshold) {
+    // swipe izquierda → siguiente slide
+    goToSlide((index + 1) % totalSlides);
+  } else if (deltaX < -swipeThreshold) {
+    // swipe derecha → slide anterior
+    goToSlide((index - 1 + totalSlides) % totalSlides);
+  }
+});
+
 // Autoplay con reinicio
 let autoplayTimeout;
 function startAutoplay() {
