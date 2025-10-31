@@ -857,6 +857,19 @@ const catalogoPeliculas = [
         enlaceTelegram: "https://t.me/vanacue/",
         fecha: "2023-10-25"
     },
+
+    {
+        titulo: "Contraataque",
+        tipo: "Película",
+        sinopsis: `Tras rescatar a dos rehenes y hacerse de un nuevo enemigo, el capitán Guerrero y su escuadrón de élite se enfrentan a la emboscada de un grupo criminal.`,
+        genero: ['Acción', 'Aventura', 'Suspense'],
+        calificacion: 8.29,
+        duracion: "85 min",
+        elenco: ['Luis Alberti', 'Noé Hernández', 'Leonardo Alonso', 'Luis Curiel', 'Guillermo Nava'],
+        portada: "https://image.tmdb.org/t/p/original/kxnFdLJhi37ZVFDCL1ka0yeQVU5.jpg",
+        enlaceTelegram: "https://t.me/vanacue/",
+        fecha: "2025-02-27"
+    },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
