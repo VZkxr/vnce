@@ -888,9 +888,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const tituloSeccion = document.createElement("h2");
     tituloSeccion.textContent = seccion;
 
-    // Agregar botón y título al contenedor
+    //  Solo mostrar el botón si no es "Recién agregadas"
     headerSeccion.appendChild(tituloSeccion);
-    headerSeccion.appendChild(explorarBtn);  // se superpone sobre el título
+    if (seccion !== "Recién agregadas") {
+      headerSeccion.appendChild(explorarBtn);
+    }
 
     // Agregar al div de la sección
     seccionDiv.appendChild(headerSeccion);
