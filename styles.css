@@ -727,7 +727,6 @@ header {
   .scroll-btn {
     display: none;
   }
-}
 
     /* === FOOTER === */
   .footer {
@@ -743,6 +742,20 @@ header {
     margin: 0;
     letter-spacing: 0.5px;
   }
+}
+
+/* === Ajuste de posición del buscador en modo responsive === */
+@media (max-width: 900px) {
+  .buscador-overlay {
+    padding-top: 3rem; /* antes era 10rem → sube un poco */
+  }
+}
+
+@media (max-width: 600px) {
+  .buscador-overlay {
+    padding-top: 1rem; /* aún más arriba en pantallas pequeñas */
+  }
+}
 
 
 /* === RESPONSIVE === */
