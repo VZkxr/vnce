@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Género</title>
+  <link rel="icon" type="image/png" href="Multimedia/logo.png">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -35,19 +36,51 @@
     <p>© 2025 Vanacue. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
-
+  
   <!-- === CONTENEDOR BUSCADOR === -->
   <div id="buscador-overlay" class="buscador-overlay hidden">
     <div class="buscador-contenido">
       <input
-        type="text"
-        id="input-busqueda"
-        placeholder="Buscar películas o series..."
-        autocomplete="off"
+      type="text"
+      id="input-busqueda"
+      placeholder="Buscar películas o series..."
+      autocomplete="off"
       />
       <div id="resultados-busqueda" class="resultados-busqueda"></div>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+  <script>
+    // Configuración personalizada de disable-devtool
+    DisableDevtool({
+      ondevtoolopen: function(type, next) {
+        // Redirigir a Google
+        window.location.href = 'https://www.google.com';
+        // Intentar cerrar la ventana después de un breve retraso
+        setTimeout(function() {
+          window.close();
+        }, 100);
+        // No llamamos a next() para evitar el comportamiento por defecto de disable-devtool
+        // ya que queremos nuestra propia acción (redirección y cierre)
+      },
+      // Otras opciones que quieras configurar
+      clearLog: true,
+      disableSelect: true,
+      disableCopy: true,
+      disableCut: true,
+      disablePaste: true,
+      interval: 500,
+      shortcuts: {
+        f12: true,
+        ctrlShiftI: true,
+        ctrlShiftJ: true,
+        ctrlShiftC: true,
+        ctrlU: true
+      }
+    });
+  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>
