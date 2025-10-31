@@ -870,6 +870,19 @@ const catalogoPeliculas = [
         enlaceTelegram: "https://t.me/c/2990770379/518",
         fecha: "2025-02-27"
     },
+
+    {
+        titulo: "Demolición",
+        tipo: "Película",
+        sinopsis: `Davis Mitchell es un exitoso ejecutivo que sufre una grave desconexión emocional tras la repentina y trágica muerte de su mujer en un accidente de coche. Aunque su suegro intenta por todos los medios que se recupere, continúa bloqueado y se dedica a desmontar compulsivamente toda clase de objetos. Gracias a la ayuda de Karen y de su hijo, a los que acaba de conocer, Davis empieza a reconstruir su vida.`,
+        genero: ['Comedia', 'Drama'],
+        calificacion: 6.832,
+        duracion: "101 min",
+        elenco: ['Jake Gyllenhaal', 'Naomi Watts', 'Chris Cooper', 'Judah Lewis', 'C.J. Wilson'],
+        portada: "https://image.tmdb.org/t/p/original/vGAQasaiocRmXkabQuvM2o1kjBB.jpg",
+        enlaceTelegram: "https://t.me/vanacue/",
+        fecha: "2016-04-06"
+    },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
