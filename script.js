@@ -1192,3 +1192,23 @@ document.addEventListener("click", e => {
     window.open(pelicula.enlaceTelegram, "_blank"); // abrir en nueva pestaña
   }
 });
+
+
+// === BOTONES DE REPRODUCIR DEL HERO ===
+document.addEventListener("DOMContentLoaded", () => {
+  const botonesHero = document.querySelectorAll(".hero-slide .hero-btn");
+
+  // Define los enlaces personalizados para cada slide (en el mismo orden que aparecen en el HTML)
+  const enlacesHero = [
+    "https://t.me/c/2990770379/415", // Superman
+    "https://t.me/c/2990770379/455", // Heretic
+    "https://t.me/c/2990770379/264"  // Stranger Things
+  ];
+
+  botonesHero.forEach((boton, i) => {
+    boton.addEventListener("click", () => {
+      const url = enlacesHero[i];
+      if (url) window.open(url, "_blank"); // abre en nueva pestaña
+    });
+  });
+});
