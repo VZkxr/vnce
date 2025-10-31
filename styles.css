@@ -462,6 +462,165 @@ header {
   color: #fff;
 }
 
+/* === BUSCADOR EMERGENTE === */
+.buscador-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 8rem;
+  z-index: 2000;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.buscador-overlay.hidden {
+  display: none;
+}
+
+.buscador-contenido {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#input-busqueda {
+  width: 100%;
+  max-width: 700px;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+  background-color: #222;
+  color: #fff;
+}
+
+/* === GRID DE RESULTADOS === */
+.resultados-busqueda {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-items: center;
+  overflow-y: auto;
+  max-height: calc(100vh - 200px);
+  padding-right: 0.5rem; /* espacio para scrollbar */
+}
+
+/* === AJUSTE DE TARJETAS EN BUSCADOR === */
+.resultados-busqueda .tarjeta {
+  width: 100%;
+  max-width: 250px;
+  height: 420px; /* más altura total */
+  border-radius: 14px;
+  overflow: hidden;
+  background-color: #111;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resultados-busqueda .tarjeta img {
+  width: 100%;
+  height: 85%; /* más espacio para la imagen */
+  object-fit: cover;
+}
+
+.resultados-busqueda .contenido {
+  height: 15%;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+}
+
+.resultados-busqueda .contenido h3 {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resultados-busqueda .contenido p {
+  font-size: 0.8rem;
+  color: #ccc;
+  margin: 0.2rem 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .resultados-busqueda {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .resultados-busqueda .tarjeta {
+    max-width: 200px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .resultados-busqueda {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .resultados-busqueda .tarjeta {
+    max-width: 180px;
+    height: auto; 
+  }
+
+  .resultados-busqueda .tarjeta img {
+    width: 100%;
+    aspect-ratio: 2/3; /* ✅ mantiene la proporción vertical típica de póster */
+    height: auto;
+    object-fit: cover;
+  }
+
+  .resultados-busqueda .contenido {
+    padding: 0.5rem;
+    height: auto;
+  }
+
+  .resultados-busqueda .contenido h3,
+  .resultados-busqueda .contenido p {
+    white-space: normal; /* ✅ permite saltos de línea */
+    overflow: visible;
+    text-overflow: unset;
+  }
+
+  .resultados-busqueda .contenido h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .resultados-busqueda .contenido p {
+    font-size: 0.75rem;
+    color: #ccc;
+  }
+}
+
+
 /* Solo en escritorio: 8 tarjetas visibles, carrusel fijo sin scroll */
 @media screen and (min-width: 1024px) {
   .carrusel {

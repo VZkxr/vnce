@@ -1094,3 +1094,65 @@ document.addEventListener("DOMContentLoaded", () => {
     mostrarGrid("Películas", "Película");
   });
 });
+
+// === BUSCADOR EMERGENTE ===
+document.addEventListener("DOMContentLoaded", () => {
+  const iconoLupa = document.querySelector('.menu-right img[alt="Buscar"]');
+  const overlay = document.getElementById("buscador-overlay");
+  const inputBusqueda = document.getElementById("input-busqueda");
+  const resultados = document.getElementById("resultados-busqueda");
+
+  if (!iconoLupa || !overlay || !inputBusqueda || !resultados) return;
+
+  // Mostrar el buscador al hacer clic en la lupa
+  iconoLupa.addEventListener("click", () => {
+    overlay.classList.remove("hidden");
+    inputBusqueda.focus();
+  });
+
+  // Cerrar buscador con tecla ESC
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") overlay.classList.add("hidden");
+  });
+
+  // Cerrar si se hace clic fuera del cuadro
+  overlay.addEventListener("click", e => {
+    if (e.target === overlay) overlay.classList.add("hidden");
+  });
+
+  // Buscar mientras se escribe
+  inputBusqueda.addEventListener("input", e => {
+    const texto = e.target.value.toLowerCase().trim();
+    resultados.innerHTML = ""; // limpiar
+
+    if (!texto) return;
+
+    // Filtrado de coincidencias
+    const coincidencias = catalogoPeliculas.filter(p =>
+      p.titulo.toLowerCase().includes(texto)
+    );
+
+    if (coincidencias.length === 0) {
+      resultados.innerHTML = `<p style="text-align:center;color:#888;">Sin resultados para "${texto}"</p>`;
+      return;
+    }
+
+    coincidencias.forEach(pelicula => {
+      const card = document.createElement("div");
+      card.classList.add("tarjeta");
+      card.innerHTML = `
+        <img src="${pelicula.portada}" alt="${pelicula.titulo}">
+        <div class="contenido">
+          <h3>${pelicula.titulo}</h3>
+          <p>${pelicula.genero.join(", ")}</p>
+        </div>
+      `;
+      card.addEventListener("click", () => {
+        console.log(`Seleccionaste: ${pelicula.titulo}`);
+        // Aquí podrías redirigir a su página o abrir modal
+        // window.location.href = pelicula.enlaceTelegram;
+      });
+      resultados.appendChild(card);
+    });
+  });
+});
