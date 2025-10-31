@@ -915,7 +915,9 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if(seccion === "Suspenso"){
       // Mapeamos todas las películas que tengan "Suspense" a esta sección
       peliculasSeccion = catalogoPeliculas
-        .filter(p => p.genero.includes("Suspense"))
+        // Mostrar tanto los que tengan "Suspenso" como "Suspense"
+      peliculasSeccion = catalogoPeliculas
+        .filter(p => p.genero.some(g => ["suspenso","suspense"].includes(g.toLowerCase()))) 
         .slice(-8)
         .reverse();
     } else {
@@ -991,4 +993,72 @@ document.addEventListener("DOMContentLoaded", () => {
       contenedor.appendChild(card);
     });
   }
+});
+
+// === FUNCIONALIDAD DE BOTONES DE MENÚ (Inicio / Series / Películas) ===
+document.addEventListener("DOMContentLoaded", () => {
+  const btnInicio = document.querySelector(".nav-links a:nth-child(1)");
+  const btnSeries = document.querySelector(".nav-links a:nth-child(2)");
+  const btnPeliculas = document.querySelector(".nav-links a:nth-child(3)");
+
+  const hero = document.querySelector(".hero");
+  const main = document.querySelector("main");
+
+  if (!btnInicio || !btnSeries || !btnPeliculas || !main) return;
+
+  function mostrarGrid(titulo, tipo) {
+    // Ocultar el hero si existe
+    if (hero) hero.style.display = "none";
+
+    // Limpiar el contenido actual del main
+    main.innerHTML = `
+      <section class="genero-main">
+        <h1 id="titulo-genero">${titulo}</h1>
+        <div id="grid-genero" class="grid-genero"></div>
+      </section>
+    `;
+
+    const grid = main.querySelector("#grid-genero");
+
+    // Filtrar según tipo ("Serie" o "Película") y ordenar descendente por fecha
+    const elementos = catalogoPeliculas
+      .filter(item => item.tipo === tipo)
+      .sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+
+    if (elementos.length === 0) {
+      grid.innerHTML = `<p style="text-align:center;">No se encontraron ${tipo.toLowerCase()}s.</p>`;
+      return;
+    }
+
+    // Crear tarjetas
+    elementos.forEach(item => {
+      const card = document.createElement("div");
+      card.classList.add("tarjeta");
+      card.innerHTML = `
+        <img src="${item.portada}" alt="${item.titulo}">
+        <div class="contenido">
+          <h3>${item.titulo}</h3>
+          <p>${item.genero.join(", ")}</p>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  // === EVENTOS ===
+  btnInicio.addEventListener("click", e => {
+    e.preventDefault();
+    // Recargar la página para volver al hero y secciones originales
+    window.location.href = "index.html";
+  });
+
+  btnSeries.addEventListener("click", e => {
+    e.preventDefault();
+    mostrarGrid("Series", "Serie");
+  });
+
+  btnPeliculas.addEventListener("click", e => {
+    e.preventDefault();
+    mostrarGrid("Películas", "Película");
+  });
 });
