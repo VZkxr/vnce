@@ -1212,3 +1212,122 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// === CONTRASEÑA DEFINIDA EN EL FRONTEND ===
+const correctPassword = "mkepler6789";
+
+// === FUNCIÓN PARA BLOQUEAR LA PÁGINA ===
+function lockPage() {
+  const mainContent = document.getElementById('mainContent');
+  if (mainContent) {
+    mainContent.style.pointerEvents = 'none';
+  }
+
+  document.body.style.overflow = 'hidden';
+  document.body.style.userSelect = 'none';
+  document.body.style.webkitUserSelect = 'none';
+  document.body.style.mozUserSelect = 'none';
+  document.body.style.msUserSelect = 'none';
+
+  document.addEventListener('keydown', blockKeys, true);
+  document.addEventListener('contextmenu', blockRightClick, true);
+}
+
+// === FUNCIÓN PARA DESBLOQUEAR LA PÁGINA ===
+function unlockPage() {
+  document.body.style.overflow = 'auto';
+  document.body.style.userSelect = 'auto';
+  document.body.style.webkitUserSelect = 'auto';
+  document.body.style.mozUserSelect = 'auto';
+  document.body.style.msUserSelect = 'auto';
+  document.body.style.pointerEvents = 'auto';
+
+  const mainContent = document.getElementById('mainContent');
+  if (mainContent) {
+    mainContent.style.display = 'block';
+    mainContent.style.overflow = 'visible';
+    mainContent.style.pointerEvents = 'auto';
+  }
+
+  document.body.offsetHeight; // Forzar reflow
+
+  document.removeEventListener('keydown', blockKeys, true);
+  document.removeEventListener('contextmenu', blockRightClick, true);
+
+  console.log('Página desbloqueada - Scroll habilitado');
+}
+
+// === BLOQUEAR TECLAS ===
+function blockKeys(e) {
+  const allowedKeys = ['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab', 'Enter', 'Escape'];
+  const isTextInput = e.target.tagName === 'INPUT' && e.target.type === 'password';
+  if (!isTextInput && !allowedKeys.includes(e.key)) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+}
+
+// === BLOQUEAR CLIC DERECHO ===
+function blockRightClick(e) {
+  e.preventDefault();
+  e.stopPropagation();
+}
+
+// === COMPROBAR CONTRASEÑA ===
+function checkPassword() {
+  const input = document.getElementById("passwordInput").value;
+  const errorMsg = document.getElementById("errorMsg");
+
+  if (input === correctPassword) {
+    document.getElementById("passwordOverlay").style.display = "none";
+    document.getElementById("mainContent").style.display = "block";
+
+    unlockPage();
+
+    // ✅ Guardar autenticación solo en sessionStorage (mientras la pestaña siga abierta)
+    sessionStorage.setItem("passwordCorrect", "true");
+
+  } else {
+    errorMsg.style.display = "block";
+    document.getElementById("passwordInput").value = "";
+    document.getElementById("passwordInput").focus();
+  }
+}
+
+// === VERIFICAR AUTENTICACIÓN AL CARGAR ===
+window.onload = function() {
+  const overlay = document.getElementById("passwordOverlay");
+  const mainContent = document.getElementById("mainContent");
+
+  // ✅ Si la sesión ya está autenticada, no mostrar el recuadro
+  if (sessionStorage.getItem("passwordCorrect") === "true") {
+    unlockPage();
+    overlay.style.display = "none";
+    mainContent.style.display = "block";
+    return; // no ejecutar el resto
+  }
+
+  // Si no está autenticado, bloquear y pedir contraseña
+  lockPage();
+  overlay.style.display = "flex";
+  mainContent.style.display = "none";
+  document.getElementById("passwordInput").focus();
+
+  document.getElementById("passwordInput").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+      checkPassword();
+    }
+  });
+};
+
+// === MANTENER ESTADO EN NAVEGACIÓN INTERNA ===
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('a[href]');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (sessionStorage.getItem("passwordCorrect") !== "true") {
+        lockPage();
+      }
+    });
+  });
+});

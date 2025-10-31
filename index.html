@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,107 +11,115 @@
 
 <body>
 
-  <header>
-    <div class="menubar">
-      <div class="menu-left">
-        <img src="Multimedia/logo.png" alt="Logo Vanacue" class="logo">
-        <nav class="nav-links">
-          <a href="#">Inicio</a>
-          <a href="#">Series</a>
-          <a href="#">Películas</a>
-        </nav>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+  <!-- Overlay de contraseña -->
+  <div id="passwordOverlay" class="password-overlay">
+    <div class="password-container">
+      <h2>Acceso Restringido</h2>
+      <p>Por favor, ingrese la contraseña para continuar:</p>
+      <input type="password" id="passwordInput" placeholder="Contraseña">
+      <button onclick="checkPassword()">Ingresar</button>
+      <p id="errorMsg" style="color: red; display: none;">Contraseña incorrecta. Inténtelo de nuevo.</p>
+    </div>
+  </div>
+
+  <!-- CONTENIDO PRINCIPAL (oculto inicialmente) -->
+  <div id="mainContent" style="display: none;">
+    <header>
+      <div class="menubar">
+        <div class="menu-left">
+          <img src="Multimedia/logo.png" alt="Logo Vanacue" class="logo">
+          <nav class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Series</a>
+            <a href="#">Películas</a>
+          </nav>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="menu-right">
+          <img src="Multimedia/lupa.svg" alt="Buscar" class="icon">
+          <img src="Multimedia/telegram.svg" alt="Telegram" class="icon">
         </div>
       </div>
-      <div class="menu-right">
-        <img src="Multimedia/lupa.svg" alt="Buscar" class="icon">
-        <img src="Multimedia/telegram.svg" alt="Telegram" class="icon">
+    </header>
+
+    <section class="hero">
+      <div class="hero-carrusel">
+        <div class="hero-slide">
+          <img src="Multimedia/super.png" alt="Superman" class="hero-img">
+          <div class="hero-content">
+            <img src="Multimedia/super_title.png" alt="Título Superman" class="hero-logo">
+            <p class="hero-subtitle">Explora la historia de Kal-El</p>
+            <button class="hero-btn">▶ Reproducir</button>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <img src="Multimedia/heretic.png" alt="Heretic" class="hero-img">
+          <div class="hero-content">
+            <img src="Multimedia/heretic_title.png" alt="Título Heretic" class="hero-logo">
+            <p class="hero-subtitle">Un juego de traición y misterio</p>
+            <button class="hero-btn">▶ Reproducir</button>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <img src="Multimedia/stranger.png" alt="Stranger Things" class="hero-img">
+          <div class="hero-content">
+            <img src="Multimedia/stranger_title.png" alt="Título Stranger Things" class="hero-logo">
+            <p class="hero-subtitle">Lo extraordinario llega a Hawkins</p>
+            <button class="hero-btn">▶ Reproducir</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Botones de navegación -->
+      <button class="hero-btn-left">
+        <img src="Multimedia/left-arrow.svg" alt="Izquierda">
+      </button>
+      <button class="hero-btn-right">
+        <img src="Multimedia/right-arrow.svg" alt="Derecha">
+      </button>
+
+      <!-- Dots/Indicadores -->
+      <div class="hero-dots">
+        <img src="Multimedia/circle_w.svg" alt="Superman" class="dot active">
+        <img src="Multimedia/circle.svg" alt="Heretic" class="dot">
+        <img src="Multimedia/circle.svg" alt="Stranger Things" class="dot">
+      </div>
+    </section>
+
+    <main></main>
+
+    <footer class="footer">
+      <p>© 2025 Vanacue. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- === CONTENEDOR BUSCADOR === -->
+    <div id="buscador-overlay" class="buscador-overlay hidden">
+      <div class="buscador-contenido">
+        <input
+          type="text"
+          id="input-busqueda"
+          placeholder="Buscar películas o series..."
+          autocomplete="off"
+        />
+        <div id="resultados-busqueda" class="resultados-busqueda"></div>
       </div>
     </div>
-  </header>
+  </div> <!-- Fin de mainContent -->
 
-  <section class="hero">
-  <div class="hero-carrusel">
-    <div class="hero-slide">
-      <img src="Multimedia/super.png" alt="Superman" class="hero-img">
-      <div class="hero-content">
-        <img src="Multimedia/super_title.png" alt="Título Superman" class="hero-logo">
-        <p class="hero-subtitle">Explora la historia de Kal-El</p>
-        <button class="hero-btn">▶ Reproducir</button>
-      </div>
-    </div>
-    <div class="hero-slide">
-      <img src="Multimedia/heretic.png" alt="Heretic" class="hero-img">
-      <div class="hero-content">
-        <img src="Multimedia/heretic_title.png" alt="Título Heretic" class="hero-logo">
-        <p class="hero-subtitle">Un juego de traición y misterio</p>
-        <button class="hero-btn">▶ Reproducir</button>
-      </div>
-    </div>
-    <div class="hero-slide">
-      <img src="Multimedia/stranger.png" alt="Stranger Things" class="hero-img">
-      <div class="hero-content">
-        <img src="Multimedia/stranger_title.png" alt="Título Stranger Things" class="hero-logo">
-        <p class="hero-subtitle">Lo extraordinario llega a Hawkins</p>
-        <button class="hero-btn">▶ Reproducir</button>
-      </div>
-    </div>
-
-  </div>
-  <!-- Botones de navegación -->
-<button class="hero-btn-left">
-  <img src="Multimedia/left-arrow.svg" alt="Izquierda">
-</button>
-<button class="hero-btn-right">
-  <img src="Multimedia/right-arrow.svg" alt="Derecha">
-</button>
-
-<!-- Dots/Indicadores -->
-<div class="hero-dots">
-  <img src="Multimedia/circle_w.svg" alt="Superman" class="dot active">
-  <img src="Multimedia/circle.svg" alt="Heretic" class="dot">
-  <img src="Multimedia/circle.svg" alt="Stranger Things" class="dot">
-</div>
-
-</section>
-
-<main></main>
-
-<footer class="footer">
-  <p>© 2025 Vanacue. Todos los derechos reservados.</p>
-</footer>
-
-<!-- === CONTENEDOR BUSCADOR === -->
-<div id="buscador-overlay" class="buscador-overlay hidden">
-  <div class="buscador-contenido">
-    <input
-    type="text"
-    id="input-busqueda"
-    placeholder="Buscar películas o series..."
-    autocomplete="off"
-    />
-    <div id="resultados-busqueda" class="resultados-busqueda"></div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/disable-devtool@latest"></script>
   <script>
     // Configuración personalizada de disable-devtool
     DisableDevtool({
       ondevtoolopen: function(type, next) {
-        // Redirigir a Google
         window.location.href = 'https://www.google.com';
-        // Intentar cerrar la ventana después de un breve retraso
         setTimeout(function() {
           window.close();
         }, 100);
-        // No llamamos a next() para evitar el comportamiento por defecto de disable-devtool
-        // ya que queremos nuestra propia acción (redirección y cierre)
       },
-      // Otras opciones que quieras configurar
       clearLog: true,
       disableSelect: true,
       disableCopy: true,
@@ -129,6 +136,6 @@
     });
   </script>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
