@@ -1273,61 +1273,51 @@ function blockRightClick(e) {
   e.stopPropagation();
 }
 
-// === COMPROBAR CONTRASEÑA ===
-function checkPassword() {
-  const input = document.getElementById("passwordInput").value;
-  const errorMsg = document.getElementById("errorMsg");
-
-  if (input === correctPassword) {
-    document.getElementById("passwordOverlay").style.display = "none";
-    document.getElementById("mainContent").style.display = "block";
-
-    unlockPage();
-
-    // ✅ Guardar autenticación solo en sessionStorage (mientras la pestaña siga abierta)
-    sessionStorage.setItem("passwordCorrect", "true");
-
-  } else {
-    errorMsg.style.display = "block";
-    document.getElementById("passwordInput").value = "";
-    document.getElementById("passwordInput").focus();
-  }
-}
-
-// === VERIFICAR AUTENTICACIÓN AL CARGAR ===
-window.onload = function() {
+// === AUTENTICACIÓN SIN PARPADEO ===
+document.addEventListener("DOMContentLoaded", () => {
   const overlay = document.getElementById("passwordOverlay");
   const mainContent = document.getElementById("mainContent");
+  const passwordInput = document.getElementById("passwordInput");
+  const errorMsg = document.getElementById("errorMsg");
+  const submitBtn = document.getElementById("submitPassword"); // botón
 
-  // ✅ Si la sesión ya está autenticada, no mostrar el recuadro
+  // Verificar si ya está autenticado antes de mostrar nada
   if (sessionStorage.getItem("passwordCorrect") === "true") {
     unlockPage();
     overlay.style.display = "none";
     mainContent.style.display = "block";
-    return; // no ejecutar el resto
+    return; // Evita que parpadee
   }
 
-  // Si no está autenticado, bloquear y pedir contraseña
+  // Si no está autenticado, bloquear y mostrar overlay
   lockPage();
   overlay.style.display = "flex";
   mainContent.style.display = "none";
-  document.getElementById("passwordInput").focus();
+  passwordInput.focus();
 
-  document.getElementById("passwordInput").addEventListener("keypress", function(e) {
+  // Evento Enter
+  passwordInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
-      checkPassword();
+      validarPassword();
     }
   });
-};
 
-// === MANTENER ESTADO EN NAVEGACIÓN INTERNA ===
-document.addEventListener('DOMContentLoaded', function() {
-  const navLinks = document.querySelectorAll('a[href]');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      if (sessionStorage.getItem("passwordCorrect") !== "true") {
-        lockPage();
-      }
-    });
-  });
+  // Evento Click del botón
+  if (submitBtn) {
+    submitBtn.addEventListener("click", validarPassword);
+  }
+
+  function validarPassword() {
+    const input = passwordInput.value.trim();
+    if (input === correctPassword) {
+      sessionStorage.setItem("passwordCorrect", "true");
+      overlay.style.display = "none";
+      mainContent.style.display = "block";
+      unlockPage();
+    } else {
+      errorMsg.style.display = "block";
+      passwordInput.value = "";
+      passwordInput.focus();
+    }
+  }
 });

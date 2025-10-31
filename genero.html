@@ -7,6 +7,14 @@
   <link rel="icon" type="image/png" href="Multimedia/logo.png">
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    (function() {
+      if (sessionStorage.getItem("passwordCorrect") !== "true") {
+        // Si no está autenticado, lo mandamos al index
+        window.location.href = "index.html";
+      }
+    })();
+  </script>
 </head>
 <body>
 
