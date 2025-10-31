@@ -908,24 +908,34 @@ document.addEventListener("DOMContentLoaded", () => {
     const carrusel = document.createElement("div");
     carrusel.classList.add("carrusel");
 
+    // Mapeo de sinónimos para secciones que pueden tener variantes en los datos
+    const generoAliases = {
+      "suspenso": ["suspenso", "suspense"],
+      // si en el futuro quieres más aliases: "accion": ["acción","accion"], ...
+    };
+
     // Filtrar según sección y mantener orden descendente
     let peliculasSeccion = [];
-    if(seccion === "Recién agregadas"){
-      peliculasSeccion = catalogoPeliculas.slice(-8).reverse(); // últimas 8 en orden descendente
-    } else if(seccion === "Suspenso"){
-      // Mapeamos todas las películas que tengan "Suspense" a esta sección
-      peliculasSeccion = catalogoPeliculas
-        // Mostrar tanto los que tengan "Suspenso" como "Suspense"
-      peliculasSeccion = catalogoPeliculas
-        .filter(p => p.genero.some(g => ["suspenso","suspense"].includes(g.toLowerCase()))) 
-        .slice(-8)
-        .reverse();
-    } else {
-      peliculasSeccion = catalogoPeliculas
-        .filter(p => p.genero.includes(seccion))
-        .slice(-8)           // tomar las últimas 8 de esa sección
-        .reverse();           // invertir para orden descendente
-    }
+    if (seccion === "Recién agregadas") {
+        peliculasSeccion = [...catalogoPeliculas].slice(-8).reverse();
+      } else {
+        const key = seccion.toLowerCase();
+
+        if (key === "suspenso") {
+          // usar aliases para buscar tanto "Suspenso" como "Suspense"
+          const aliases = generoAliases["suspenso"];
+          peliculasSeccion = catalogoPeliculas
+            .filter(p => p.genero.some(g => aliases.includes(g.toLowerCase())))
+            .slice(-8)
+            .reverse();
+        } else {
+          // búsqueda case-insensitive exacta en el array de géneros
+          peliculasSeccion = catalogoPeliculas
+            .filter(p => p.genero.some(g => g.toLowerCase() === key))
+            .slice(-8)
+            .reverse();
+        }
+      }
 
     // Crear tarjetas (solo portada, título y géneros visibles)
     peliculasSeccion.forEach(pelicula => {
@@ -968,18 +978,40 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!generoParam) return; // si no estamos en la página de género, salimos
 
   const generoNombre = decodeURIComponent(generoParam).replace("_", " ");
+  const generoKey = generoNombre.toLowerCase();
+
   const titulo = document.getElementById("titulo-genero");
   const contenedor = document.getElementById("grid-genero");
 
   if (titulo && contenedor) {
+    // Poner el título con mayúscula inicial
     titulo.textContent = generoNombre.charAt(0).toUpperCase() + generoNombre.slice(1);
 
-    // Filtrar y mostrar en orden descendente según el orden en que fueron agregadas (últimas primero)
+    // === 🔧 Mapeo de sinónimos (Suspenso <-> Suspense) ===
+    const generoAliases = {
+      "suspenso": ["suspenso", "suspense"],
+      "suspense": ["suspenso", "suspense"]
+    };
+
+    // === Filtrar películas coincidentes ===
     const peliculasFiltradas = catalogoPeliculas
-      .filter(p => p.genero.some(g => g.toLowerCase() === generoNombre.toLowerCase()))
-      .reverse(); // invierte el arreglo filtrado para mostrar de la más nueva a la más antigua
+      .filter(p => 
+        p.genero.some(g => {
+          const gLower = g.toLowerCase();
+          // si existe alias, busca en ambas variantes
+          if (generoAliases[generoKey]) {
+            return generoAliases[generoKey].includes(gLower);
+          }
+          // de lo contrario, coincidencia exacta (case-insensitive)
+          return gLower === generoKey;
+        })
+      )
+      .slice()      // copia del array
+      .reverse();   // invertir: últimas agregadas primero
 
+    console.log(`Género: ${generoNombre} → Encontradas:`, peliculasFiltradas.map(p => p.titulo));
 
+    // === Renderizar tarjetas ===
     peliculasFiltradas.forEach(pelicula => {
       const card = document.createElement("div");
       card.classList.add("tarjeta");
