@@ -880,7 +880,7 @@ const catalogoPeliculas = [
         duracion: "101 min",
         elenco: ['Jake Gyllenhaal', 'Naomi Watts', 'Chris Cooper', 'Judah Lewis', 'C.J. Wilson'],
         portada: "https://image.tmdb.org/t/p/original/vGAQasaiocRmXkabQuvM2o1kjBB.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/532",
         fecha: "2016-04-06"
     },
 ];
