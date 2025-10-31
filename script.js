@@ -87,7 +87,7 @@ const catalogoPeliculas = [
         duracion: "129 min",
         elenco: ['David Corenswet', 'Rachel Brosnahan', 'Nicholas Hoult', 'Edi Gathegi', 'Nathan Fillion'],
         portada: "https://image.tmdb.org/t/p/original/fvUJb08yatV2b3NUSwuYdQKYoFd.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/415",
         fecha: "2025-07-09"
     },
 
@@ -100,7 +100,7 @@ const catalogoPeliculas = [
         duracion: "82 min",
         elenco: ['Shelley Hennig', 'Heather Sossaman', 'Renee Olstead', 'Matthew Bohrer', 'Moses Storm'],
         portada: "https://image.tmdb.org/t/p/original/pzxHNiKjHL8Sz7DZ7POXXqohxet.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/474",
         fecha: "2014-10-22"
     },
 
@@ -113,7 +113,7 @@ const catalogoPeliculas = [
         duracion: "3 temporadas",
         elenco: ['Scoot McNairy', 'José María Yázpik', 'Alejandro Edda', 'Luis Gerardo Méndez', 'Matt Letscher'],
         portada: "https://image.tmdb.org/t/p/original/yCid4sQkaVzfa2y4yQWs5E0TES9.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/427",
         fecha: "2018-11-16"
     },
 
@@ -126,7 +126,7 @@ const catalogoPeliculas = [
         duracion: "3 temporadas",
         elenco: ['Adriana Ozores', 'Amaia Salamanca', 'Yon González', 'Eloy Azorín', 'Fele Martínez'],
         portada: "https://image.tmdb.org/t/p/original/hAEWiDY5trfg0JRVaGGyea6Cepk.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/2",
         fecha: "2011-05-10"
     },
 
@@ -139,7 +139,7 @@ const catalogoPeliculas = [
         duracion: "9 temporadas",
         elenco: ['Rainn Wilson', 'John Krasinski', 'Jenna Fischer', 'Ed Helms'],
         portada: "https://image.tmdb.org/t/p/original/xMtiEEQ8ajtTkEvpftrIGsdmonz.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/11",
         fecha: "2005-03-24"
     },
 
@@ -152,7 +152,7 @@ const catalogoPeliculas = [
         duracion: "101 min",
         elenco: ['Keanu Reeves', 'Michael Nyqvist', 'Alfie Allen', 'Willem Dafoe', 'Dean Winters'],
         portada: "https://image.tmdb.org/t/p/original/tDl5ac1VJwMRvlgINDCsDCqg9CE.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/327",
         fecha: "2014-10-22"
     },
 
@@ -165,7 +165,7 @@ const catalogoPeliculas = [
         duracion: "122 min",
         elenco: ['Keanu Reeves', 'Common', 'Laurence Fishburne', 'Riccardo Scamarcio', 'Ruby Rose'],
         portada: "https://image.tmdb.org/t/p/original/jiNJdE6F9Gf7c0ZnrQMSJNXQnrd.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/327",
         fecha: "2017-02-08"
     },
 
@@ -178,7 +178,7 @@ const catalogoPeliculas = [
         duracion: "131 min",
         elenco: ['Keanu Reeves', 'Halle Berry', 'Ian McShane', 'Laurence Fishburne', 'Mark Dacascos'],
         portada: "https://image.tmdb.org/t/p/original/aKw7oqYdfn4pkKYvp18Gd1YhK6m.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/327",
         fecha: "2019-05-15"
     },
 
@@ -191,7 +191,7 @@ const catalogoPeliculas = [
         duracion: "170 min",
         elenco: ['Keanu Reeves', '甄子丹', 'Bill Skarsgård', 'Ian McShane', 'Laurence Fishburne'],
         portada: "https://image.tmdb.org/t/p/original/mj2Z9HnRSIEk3n7yVPoOY4Uzzfh.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/327",
         fecha: "2023-03-22"
     },
 
@@ -204,7 +204,7 @@ const catalogoPeliculas = [
         duracion: "3 episodios",
         elenco: ['Colin Woodell', 'Mel Gibson', 'Mishel Prada', 'Ben Robson', 'Hubert Point-Du Jour'],
         portada: "https://image.tmdb.org/t/p/original/sDasxXov8BvqWCSA0BJvvMmQNdr.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/334",
         fecha: "2023-09-22"
     },
 
@@ -217,7 +217,7 @@ const catalogoPeliculas = [
         duracion: "114 min",
         elenco: ['Ella Rumpf', 'Julien Frison', 'Jean-Pierre Darroussin', 'Sonia Bonny', 'Clotilde Courau'],
         portada: "https://image.tmdb.org/t/p/original/s3hngjvkwOWfU7aJbHQVJitsfrF.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/339",
         fecha: "2023-11-01"
     },
 
@@ -230,7 +230,7 @@ const catalogoPeliculas = [
         duracion: "125 min",
         elenco: ['Ana de Armas', 'Keanu Reeves', 'Ian McShane', 'Anjelica Huston', 'Gabriel Byrne'],
         portada: "https://image.tmdb.org/t/p/original/llpNGX1H5sQdGRHeteyFXELuoMz.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/341",
         fecha: "2025-06-04"
     },
 
@@ -243,7 +243,7 @@ const catalogoPeliculas = [
         duracion: "122 min",
         elenco: ['Kristen Stewart', 'Robert Pattinson', 'Billy Burke', 'Peter Facinelli', 'Ashley Greene'],
         portada: "https://image.tmdb.org/t/p/original/40ollvfwHaVF85lkkg522SIl3Qc.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/364",
         fecha: "2008-11-20"
     },
 
@@ -256,7 +256,7 @@ const catalogoPeliculas = [
         duracion: "131 min",
         elenco: ['Kristen Stewart', 'Robert Pattinson', 'Taylor Lautner', 'Dakota Fanning', 'Michael Sheen'],
         portada: "https://image.tmdb.org/t/p/original/l5lF8VHTO5QKObAKE3Wp2QQfGZJ.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/364",
         fecha: "2009-11-18"
     },
 
@@ -269,7 +269,7 @@ const catalogoPeliculas = [
         duracion: "124 min",
         elenco: ['Kristen Stewart', 'Robert Pattinson', 'Taylor Lautner', 'Bryce Dallas Howard', 'Dakota Fanning'],
         portada: "https://image.tmdb.org/t/p/original/mckJPxNAQ51beBQw82evAa9a2Wd.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/364",
         fecha: "2010-06-23"
     },
 
@@ -282,7 +282,7 @@ const catalogoPeliculas = [
         duracion: "117 min",
         elenco: ['Kristen Stewart', 'Robert Pattinson', 'Taylor Lautner', 'Billy Burke', 'Peter Facinelli'],
         portada: "https://image.tmdb.org/t/p/original/27WlKKz9f3vMr6JvSf0LDBVdtaZ.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/364",
         fecha: "2011-11-16"
     },
 
@@ -295,7 +295,7 @@ const catalogoPeliculas = [
         duracion: "115 min",
         elenco: ['Kristen Stewart', 'Robert Pattinson', 'Taylor Lautner', 'Peter Facinelli', 'Elizabeth Reaser'],
         portada: "https://image.tmdb.org/t/p/original/pPB3rQx0oBOmj5CHZxLWgexo5nS.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/364",
         fecha: "2012-11-13"
     },
 
@@ -308,7 +308,7 @@ const catalogoPeliculas = [
         duracion: "126 min",
         elenco: ['Toni Collette', 'Alex Wolff', 'Gabriel Byrne', 'Milly Shapiro', 'Ann Dowd'],
         portada: "https://image.tmdb.org/t/p/original/6chE8jSfzggAudaHmKodzBz8Sl.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/370",
         fecha: "2018-06-07"
     },
 
@@ -321,7 +321,7 @@ const catalogoPeliculas = [
         duracion: "5 temporadas",
         elenco: ['Millie Bobby Brown', 'Finn Wolfhard', 'Noah Schnapp', 'Gaten Matarazzo', 'Caleb McLaughlin'],
         portada: "https://image.tmdb.org/t/p/original/1sRJ8D1vpXE5WQBGrUBky3uUwvX.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/264",
         fecha: "2016-07-15"
     },
 
@@ -334,7 +334,7 @@ const catalogoPeliculas = [
         duracion: "145 min",
         elenco: ['Harry Dean Stanton', 'Nastassja Kinski', 'Dean Stockwell', 'Hunter Carson', 'Aurore Clément'],
         portada: "https://image.tmdb.org/t/p/original/ba8edzVOul1uDHaLgDImALqhsN1.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/383",
         fecha: "1984-07-16"
     },
 
@@ -347,7 +347,7 @@ const catalogoPeliculas = [
         duracion: "108 min",
         elenco: ['Dev Patel', 'Jeremy Irons', 'Toby Jones', 'Devika Bhise', 'Stephen Fry'],
         portada: "https://image.tmdb.org/t/p/original/sUnBAIZwvtLgAucRe9PixhYEvec.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/387",
         fecha: "2016-04-08"
     },
 
@@ -360,7 +360,7 @@ const catalogoPeliculas = [
         duracion: "101 min",
         elenco: ['Robert De Niro', 'Dakota Fanning', 'Famke Janssen', 'Elisabeth Shue', 'Amy Irving'],
         portada: "https://image.tmdb.org/t/p/original/bzpCwz8KoVzb0yIr7BI6W4LQjM2.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/389",
         fecha: "2005-01-27"
     },
 
@@ -373,7 +373,7 @@ const catalogoPeliculas = [
         duracion: "93 min",
         elenco: ['Perdita Weeks', 'Ben Feldman', 'Edwin Hodge', 'François Civil', 'Marion Lambert'],
         portada: "https://image.tmdb.org/t/p/original/vyDIDxwMQP8UG9bpAeckURPK0Vq.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/391",
         fecha: "2014-08-14"
     },
 
@@ -386,7 +386,7 @@ const catalogoPeliculas = [
         duracion: "116 min",
         elenco: ['Gerard Butler', 'Lena Headey', 'Dominic West', 'David Wenham', 'Vincent Regan'],
         portada: "https://image.tmdb.org/t/p/original/h7Lcio0c9ohxPhSZg42eTlKIVVY.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/395",
         fecha: "2007-03-07"
     },
 
@@ -399,7 +399,7 @@ const catalogoPeliculas = [
         duracion: "102 min",
         elenco: ['Sullivan Stapleton', 'Eva Green', 'Lena Headey', 'Callan Mulvey', 'David Wenham'],
         portada: "https://image.tmdb.org/t/p/original/cbt5wY4rCe63JBmNYnJytJpFhnm.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/395",
         fecha: "2014-03-05"
     },
 
@@ -412,7 +412,7 @@ const catalogoPeliculas = [
         duracion: "118 min",
         elenco: ['Ivana Baquero', 'Sergi López', 'Maribel Verdú', 'Ariadna Gil', 'Doug Jones'],
         portada: "https://image.tmdb.org/t/p/original/953ZprqPxXSfhHvjBVRiIv7fSP6.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/404",
         fecha: "2006-10-11"
     },
 
@@ -425,7 +425,7 @@ const catalogoPeliculas = [
         duracion: "170 min",
         elenco: ['Tom Cruise', 'Hayley Atwell', 'Ving Rhames', 'Simon Pegg', 'Esai Morales'],
         portada: "https://image.tmdb.org/t/p/original/haOjJGUV00dKlZaJWgjM1UD1cJV.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/500",
         fecha: "2025-05-17"
     },
 
@@ -438,7 +438,7 @@ const catalogoPeliculas = [
         duracion: "104 min",
         elenco: ['Sam Rockwell', 'Marc Maron', 'Awkwafina', 'Craig Robinson', 'Anthony Ramos'],
         portada: "https://image.tmdb.org/t/p/original/mZmnKDhIS2yNmtfzde5vtdCYzBF.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/491",
         fecha: "2025-07-24"
     },
 
@@ -451,7 +451,7 @@ const catalogoPeliculas = [
         duracion: "87 min",
         elenco: ['Damien Ferrette', 'Hervé Jolly', 'Kaycie Chase', 'Frantz Confiac', 'Emmanuel Garijo'],
         portada: "https://image.tmdb.org/t/p/original/7B22kTVnkXhpKhaKDGOQ7bIvDXW.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/413",
         fecha: "2025-07-02"
     },
 
@@ -464,7 +464,7 @@ const catalogoPeliculas = [
         duracion: "90 min",
         elenco: ['Donald Pleasence', 'Jamie Lee Curtis', 'Nancy Kyes', 'P. J. Soles', 'Charles Cyphers'],
         portada: "https://image.tmdb.org/t/p/original/6bsDpDL312h6vEGPOPWoweaZWUG.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "1978-10-24"
     },
 
@@ -477,7 +477,7 @@ const catalogoPeliculas = [
         duracion: "92 min",
         elenco: ['Jamie Lee Curtis', 'Donald Pleasence', 'Charles Cyphers', 'Jeffrey Kramer', 'Lance Guest'],
         portada: "https://image.tmdb.org/t/p/original/apMPhXFMkqfBHx8ltZKMDB9JuAi.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "1981-10-30"
     },
 
@@ -490,7 +490,7 @@ const catalogoPeliculas = [
         duracion: "99 min",
         elenco: ['Tom Atkins', 'Stacey Nelkin', "Dan O'Herlihy", 'Michael Currie', 'Ralph Strait'],
         portada: "https://image.tmdb.org/t/p/original/hbnLPuazrrUqHxbm2Tsd22tHdHQ.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "1982-10-22"
     },
 
@@ -503,7 +503,7 @@ const catalogoPeliculas = [
         duracion: "88 min",
         elenco: ['Donald Pleasence', 'Ellie Cornell', 'Danielle Harris', 'George P. Wilbur', 'Michael Pataki'],
         portada: "https://image.tmdb.org/t/p/original/dajbRAwMb2hLGrTQwOHeCc6ouPR.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "1988-10-21"
     },
 
@@ -516,7 +516,7 @@ const catalogoPeliculas = [
         duracion: "98 min",
         elenco: ['Donald Pleasence', 'Danielle Harris', 'Ellie Cornell', 'Wendy Foxworth', 'Beau Starr'],
         portada: "https://image.tmdb.org/t/p/original/aYW5YLdTQQ8taHCo8ezblLATCOB.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "1989-10-12"
     },
 
@@ -529,7 +529,7 @@ const catalogoPeliculas = [
         duracion: "88 min",
         elenco: ['Donald Pleasence', 'Paul Rudd', 'Marianne Hagan', 'Mitchell Ryan', 'Kim Darby'],
         portada: "https://image.tmdb.org/t/p/original/gZTdirlRJUAJz36ex46VF1kUrpJ.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "1995-09-29"
     },
 
@@ -542,7 +542,7 @@ const catalogoPeliculas = [
         duracion: "86 min",
         elenco: ['Jamie Lee Curtis', 'Josh Hartnett', 'Adam Arkin', 'Michelle Williams', 'Adam Hann-Byrd'],
         portada: "https://image.tmdb.org/t/p/original/2xj2z8qqs6r5FTSe4tAuqCrYjK5.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "1998-08-05"
     },
 
@@ -555,7 +555,7 @@ const catalogoPeliculas = [
         duracion: "94 min",
         elenco: ['Jamie Lee Curtis', 'Brad Loree', 'Busta Rhymes', 'Bianca Kajlich', 'Katee Sackhoff'],
         portada: "https://image.tmdb.org/t/p/original/oY7zaqkuiO7uVvKzl1yL7iIHauR.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "2002-07-01"
     },
 
@@ -568,7 +568,7 @@ const catalogoPeliculas = [
         duracion: "105 min",
         elenco: ['Jamie Lee Curtis', 'Judy Greer', 'Andi Matichak', 'James Jude Courtney', 'Nick Castle'],
         portada: "https://image.tmdb.org/t/p/original/tRwuTL3KhU03MA2EkXNdRXhH49V.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "2018-10-18"
     },
 
@@ -581,7 +581,7 @@ const catalogoPeliculas = [
         duracion: "105 min",
         elenco: ['Jamie Lee Curtis', 'Judy Greer', 'Andi Matichak', 'James Jude Courtney', 'Nick Castle'],
         portada: "https://image.tmdb.org/t/p/original/j1Jf5OCpjCDBCp4K7Nnh8JlvNUJ.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "2021-10-14"
     },
 
@@ -594,7 +594,7 @@ const catalogoPeliculas = [
         duracion: "111 min",
         elenco: ['Jamie Lee Curtis', 'Andi Matichak', 'James Jude Courtney', 'Rohan Campbell', 'Will Patton'],
         portada: "https://image.tmdb.org/t/p/original/9J2CQk79hu9oiLUUbODq640eVYe.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "2022-10-12"
     },
 
@@ -607,7 +607,7 @@ const catalogoPeliculas = [
         duracion: "121 min",
         elenco: ['Malcolm McDowell', 'Sheri Moon Zombie', 'Tyler Mane', 'Scout Taylor-Compton', 'Brad Dourif'],
         portada: "https://image.tmdb.org/t/p/original/dVum9ZhWGARGiZgb185I76qriPc.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/400",
         fecha: "2007-08-31"
     },
 
@@ -620,7 +620,7 @@ const catalogoPeliculas = [
         duracion: "103 min",
         elenco: ['Mason Thames', 'Madeleine McGraw', 'Ethan Hawke', 'Jeremy Davies', 'E. Roger Mitchell'],
         portada: "https://image.tmdb.org/t/p/original/1D2R2wIgbTyXTPzmyJIKSbVN9wG.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/457",
         fecha: "2022-06-16"
     },
 
@@ -633,7 +633,7 @@ const catalogoPeliculas = [
         duracion: "130 min",
         elenco: ['Pedro Pascal', 'Vanessa Kirby', 'Ebon Moss-Bachrach', 'Joseph Quinn', 'Ralph Ineson'],
         portada: "https://image.tmdb.org/t/p/original/ckfiXWGEMWrUP53cc6QyHijLlhl.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/461",
         fecha: "2025-07-23"
     },
 
@@ -646,7 +646,7 @@ const catalogoPeliculas = [
         duracion: "121 min",
         elenco: ['Jesse Eisenberg', 'Andrew Garfield', 'Armie Hammer', 'Josh Pence', 'Justin Timberlake'],
         portada: "https://image.tmdb.org/t/p/original/5T10eqfa8UgK0LF80040oFrHZk7.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/478",
         fecha: "2010-10-01"
     },
 
@@ -659,7 +659,7 @@ const catalogoPeliculas = [
         duracion: "138 min",
         elenco: ['Leonardo DiCaprio', 'Jennifer Lawrence', 'Meryl Streep', 'Cate Blanchett', 'Rob Morgan'],
         portada: "https://image.tmdb.org/t/p/original/hHT5LZndNW8qDI57niDU4M0lGOj.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/481",
         fecha: "2021-12-08"
     },
 
@@ -672,7 +672,7 @@ const catalogoPeliculas = [
         duracion: "91 min",
         elenco: ['Jasen Fisher', 'Mai Zetterling', 'Anjelica Huston', 'Charlie Potter', 'Rowan Atkinson'],
         portada: "https://image.tmdb.org/t/p/original/ptNCuitioUVcJz6RhYMuk5HBWX8.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/484",
         fecha: "1990-05-25"
     },
 
@@ -685,7 +685,7 @@ const catalogoPeliculas = [
         duracion: "126 min",
         elenco: ['Thomas Jane', 'Laurie Holden', 'Toby Jones', 'Marcia Gay Harden', 'Andre Braugher'],
         portada: "https://image.tmdb.org/t/p/original/6qXs5z9bsJSIUpeMzn1SVX0z3zV.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/487",
         fecha: "2007-11-21"
     },
 
@@ -698,7 +698,7 @@ const catalogoPeliculas = [
         duracion: "111 min",
         elenco: ['Hugh Grant', 'Sophie Thatcher', 'Chloe East', 'Topher Grace', 'Elle Young'],
         portada: "https://image.tmdb.org/t/p/original/rpo3DJFMOSAz27gDwxJ5LIwIFni.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/455",
         fecha: "2024-10-31"
     },
 
@@ -711,7 +711,7 @@ const catalogoPeliculas = [
         duracion: "100 min",
         elenco: ['Ezequiel Rodríguez', 'Demián Salomón', 'Silvina Sabater', 'Luis Ziembrowski', 'Marcelo Michinaux'],
         portada: "https://image.tmdb.org/t/p/original/9Ly4S99McgnhO50XikTGguPFNvo.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/494",
         fecha: "2023-10-05"
     },
 
@@ -724,7 +724,7 @@ const catalogoPeliculas = [
         duracion: "128 min",
         elenco: ['Julia Garner', 'Josh Brolin', 'Alden Ehrenreich', 'Austin Abrams', 'Benedict Wong'],
         portada: "https://image.tmdb.org/t/p/original/6Gw2eH2SkANYXC7mDjtYMppOXiL.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/497",
         fecha: "2025-08-04"
     },
 
@@ -737,7 +737,7 @@ const catalogoPeliculas = [
         duracion: "127 min",
         elenco: ['Brad Pitt', 'Joey King', 'Aaron Taylor-Johnson', 'Brian Tyree Henry', 'Andrew Koji'],
         portada: "https://image.tmdb.org/t/p/original/ybSIUt48PsM08F4UZwHdjL9ZVG2.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/505",
         fecha: "2022-08-03"
     },
 
@@ -750,7 +750,7 @@ const catalogoPeliculas = [
         duracion: "108 min",
         elenco: ['Gael García Bernal', 'Vicky Krieps', 'Rufus Sewell', 'Alex Wolff', 'Thomasin McKenzie'],
         portada: "https://image.tmdb.org/t/p/original/hwZ0d29xTh7BvJZfolLffRR6iVr.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/510",
         fecha: "2021-07-21"
     },
 
@@ -763,7 +763,7 @@ const catalogoPeliculas = [
         duracion: "105 min",
         elenco: ['Tom Cruise', 'Jon Voight', 'Emmanuelle Béart', 'Henry Czerny', 'Jean Reno'],
         portada: "https://image.tmdb.org/t/p/original/xCpmxw3UUjv4PGzbIPOHeoKAV0l.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/500",
         fecha: "1996-05-22"
     },
 
@@ -776,7 +776,7 @@ const catalogoPeliculas = [
         duracion: "118 min",
         elenco: ['Tom Cruise', 'Dougray Scott', 'Thandiwe Newton', 'Ving Rhames', 'Richard Roxburgh'],
         portada: "https://image.tmdb.org/t/p/original/mskE3W88cjMRrnKQye8pjmJu3O1.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/500",
         fecha: "2000-05-24"
     },
 
@@ -789,7 +789,7 @@ const catalogoPeliculas = [
         duracion: "126 min",
         elenco: ['Tom Cruise', 'Philip Seymour Hoffman', 'Ving Rhames', 'Billy Crudup', 'Michelle Monaghan'],
         portada: "https://image.tmdb.org/t/p/original/w61xBgFOfP8Z6uHKIKn1sl1TI8j.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/500",
         fecha: "2006-04-25"
     },
 
@@ -802,7 +802,7 @@ const catalogoPeliculas = [
         duracion: "133 min",
         elenco: ['Tom Cruise', 'Paula Patton', 'Simon Pegg', 'Jeremy Renner', 'Michael Nyqvist'],
         portada: "https://image.tmdb.org/t/p/original/y0hjsPyieqxcunEcAxb9mrrE09c.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/500",
         fecha: "2011-12-07"
     },
 
@@ -815,7 +815,7 @@ const catalogoPeliculas = [
         duracion: "131 min",
         elenco: ['Tom Cruise', 'Jeremy Renner', 'Simon Pegg', 'Rebecca Ferguson', 'Ving Rhames'],
         portada: "https://image.tmdb.org/t/p/original/q5twcJdIx9Swtl7CyzfvgQckWVK.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/500",
         fecha: "2015-07-28"
     },
 
@@ -828,7 +828,7 @@ const catalogoPeliculas = [
         duracion: "147 min",
         elenco: ['Tom Cruise', 'Henry Cavill', 'Ving Rhames', 'Simon Pegg', 'Rebecca Ferguson'],
         portada: "https://image.tmdb.org/t/p/original/d9UfJwY5jwdS9rB7hhhwYIEu0Vb.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/500",
         fecha: "2018-07-25"
     },
 
@@ -841,7 +841,7 @@ const catalogoPeliculas = [
         duracion: "164 min",
         elenco: ['Tom Cruise', 'Hayley Atwell', 'Ving Rhames', 'Simon Pegg', 'Rebecca Ferguson'],
         portada: "https://image.tmdb.org/t/p/original/83sGKvCv2T2CulYbd40Aeduc7n2.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/500",
         fecha: "2023-07-08"
     },
 
@@ -854,7 +854,7 @@ const catalogoPeliculas = [
         duracion: "119 min",
         elenco: ['Michael Fassbender', 'Tilda Swinton', 'Charles Parnell', 'Arliss Howard', "Kerry O'Malley"],
         portada: "https://image.tmdb.org/t/p/original/wXbAPrZTqJzlqmmRaUh95DJ5Lv1.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/515",
         fecha: "2023-10-25"
     },
 
@@ -867,7 +867,7 @@ const catalogoPeliculas = [
         duracion: "85 min",
         elenco: ['Luis Alberti', 'Noé Hernández', 'Leonardo Alonso', 'Luis Curiel', 'Guillermo Nava'],
         portada: "https://image.tmdb.org/t/p/original/kxnFdLJhi37ZVFDCL1ka0yeQVU5.jpg",
-        enlaceTelegram: "https://t.me/vanacue/",
+        enlaceTelegram: "https://t.me/c/2990770379/518",
         fecha: "2025-02-27"
     },
 ];
@@ -1170,4 +1170,25 @@ document.addEventListener("DOMContentLoaded", () => {
       resultados.appendChild(card);
     });
   });
+});
+
+
+// === CLICK GLOBAL EN TARJETAS ===
+document.addEventListener("click", e => {
+  const card = e.target.closest(".tarjeta");
+  if (!card) return; // si no se hizo clic sobre una tarjeta, salir
+
+  // Intentar obtener la info del dataset o buscar por título
+  let pelicula;
+  if (card.dataset.info) {
+    pelicula = JSON.parse(card.dataset.info);
+  } else {
+    // fallback: buscar por el título en el texto de la tarjeta
+    const titulo = card.querySelector("h3")?.textContent?.trim();
+    pelicula = catalogoPeliculas.find(p => p.titulo === titulo);
+  }
+
+  if (pelicula && pelicula.enlaceTelegram) {
+    window.open(pelicula.enlaceTelegram, "_blank"); // abrir en nueva pestaña
+  }
 });
