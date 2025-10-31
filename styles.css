@@ -1099,3 +1099,19 @@ header {
   display: none; /* importante para evitar parpadeo */
 }
 
+/* === Ajuste en móviles muy pequeños === */
+@media (max-width: 600px) {
+  .password-container {
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    max-width: 300px;
+  }
+
+  .password-container input {
+    width: 100%;
+  }
+
+  .password-container button {
+    width: 100%;
+  }
+}
