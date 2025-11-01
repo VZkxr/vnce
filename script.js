@@ -1132,20 +1132,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!iconoLupa || !overlay || !inputBusqueda || !resultados) return;
 
-  // Mostrar el buscador al hacer clic en la lupa
-  iconoLupa.addEventListener("click", () => {
+  // --- Funciones auxiliares ---
+  const abrirBuscador = () => {
     overlay.classList.remove("hidden");
     inputBusqueda.focus();
-  });
+    // Empuja un estado temporal al historial
+    history.pushState({ buscador: true }, "");
+  };
+
+  const cerrarBuscador = () => {
+    overlay.classList.add("hidden");
+    // Solo retrocede si el estado actual pertenece al buscador
+    if (history.state && history.state.buscador) {
+      history.back();
+    }
+  };
+
+  // --- Mostrar el buscador al hacer clic en la lupa ---
+  iconoLupa.addEventListener("click", abrirBuscador);
 
   // Cerrar buscador con tecla ESC
   document.addEventListener("keydown", e => {
-    if (e.key === "Escape") overlay.classList.add("hidden");
+    if (e.key === "Escape") cerrarBuscador();
   });
 
   // Cerrar si se hace clic fuera del cuadro
   overlay.addEventListener("click", e => {
-    if (e.target === overlay) overlay.classList.add("hidden");
+    if (e.target === overlay) cerrarBuscador();
+  });
+
+  // --- Detectar cuando el usuario presiona el botón "atrás" ---
+  window.addEventListener("popstate", e => {
+    if (overlay && !overlay.classList.contains("hidden")) {
+      // Si el buscador está abierto, lo cerramos sin abandonar la página
+      overlay.classList.add("hidden");
+    }
   });
 
   // Buscar mientras se escribe
