@@ -1355,3 +1355,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 });
+
+// === PERMITIR PEGAR CONTRASEÑA (para evitar bloqueo de disable-devtool) ===
+document.addEventListener("DOMContentLoaded", () => {
+  const passwordInput = document.getElementById("passwordInput");
+  if (passwordInput) {
+    passwordInput.addEventListener("paste", (e) => {
+      e.stopPropagation(); // evita que disable-devtool lo bloquee
+    }, true);
+  }
+});

@@ -573,6 +573,20 @@ header {
   white-space: nowrap;
 }
 
+/* === FOOTER === */
+.footer {
+  background-color: #0e0e0e;  /* mismo fondo que la página */
+  color: #aaa;                /* gris suave, estilo Netflix */
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  border-top: 1px solid #222; /* línea sutil arriba */
+}
+
+.footer p {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
 
 @media (max-width: 900px) {
   #input-busqueda {
@@ -726,21 +740,6 @@ header {
   /* Opcional: ocultar botones de scroll en escritorio */
   .scroll-btn {
     display: none;
-  }
-
-    /* === FOOTER === */
-  .footer {
-    background-color: #0e0e0e;  /* mismo fondo que la página */
-    color: #aaa;                /* gris suave, estilo Netflix */
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
-    border-top: 1px solid #222; /* línea sutil arriba */
-  }
-
-  .footer p {
-    margin: 0;
-    letter-spacing: 0.5px;
   }
 }
 
