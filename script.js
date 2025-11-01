@@ -883,6 +883,19 @@ const catalogoPeliculas = [
         enlaceTelegram: "https://t.me/c/2990770379/532",
         fecha: "2016-04-06"
     },
+
+    {
+        titulo: "Balto: La leyenda del perro esquimal",
+        tipo: "Película",
+        sinopsis: `Balto, un perro lobo siberiano, mezcla de husky y lobo, se siente confundido en cuanto a sus orígenes y está marginado en Alaska, excepto por sus verdaderos amigos. Un día, se extiende una epidemia de difteria entre los niños de Nome, pero una violenta tormenta de nieve bloquea todas las rutas de transporte y la obtención de las medicinas necesarias se hace imposible... a menos que un grupo de perros pueda cruzar mil kilómetros tirando de un trineo a través de la atroz tormenta ártica y volver con la antitoxina. Y sólo Balto puede rescatar a los perros y salvar a los niños.`,
+        genero: ['Familia', 'Animación', 'Aventura'],
+        calificacion: 7.3,
+        duracion: "78 min",
+        elenco: ['Kevin Bacon', 'Bob Hoskins', 'Bridget Fonda', 'Jim Cummings', 'Phil Collins'],
+        portada: "https://image.tmdb.org/t/p/original/wAZ7dMCNWDxylwtz70J1WvEuXFt.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/540",
+        fecha: "1995-12-22"
+    },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
