@@ -896,6 +896,19 @@ const catalogoPeliculas = [
         enlaceTelegram: "https://t.me/c/2990770379/540",
         fecha: "1995-12-22"
     },
+
+    {
+        titulo: "Soñadoras",
+        tipo: "Serie",
+        sinopsis: `Dos historias a la vez: la primera es el amor entre Fernanda (doctora) y José Luis (profesor). La segunda es la historia de amistad de 5 colegialas en un colegio privado para niños ricos.`,
+        genero: ['Drama'],
+        calificacion: 7.4,
+        duracion: "174 episodios",
+        elenco: ['Alejandra Avalos', 'Arturo Peniche', 'Ariel López Padilla', 'José Carlos Ruiz', 'Arath de la Torre'],
+        portada: "https://image.tmdb.org/t/p/original/uVgKsSeh3ZvPYuAbk2rU0SBlAmU.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/543",
+        fecha: "1998-08-31"
+    },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
