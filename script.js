@@ -922,6 +922,19 @@ const catalogoPeliculas = [
         enlaceTelegram: "https://t.me/c/2990770379/720",
         fecha: "2025-10-26"
     },
+
+    {
+        titulo: "El nuevo show del Pájaro Loco",
+        tipo: "Serie",
+        sinopsis: `Es una serie animada basada en los personajes de El Pájaro Loco y Chilly Willy, producido por Universal Animation Studios. Se trata de una versión actualizada del Pájaro Loco y a Chilly Willy con los personajes de sus series clásicas y algunos nuevos que aparecen en sus propios segmentos.`,
+        genero: ['Animación', 'Comedia', 'Kids'],
+        calificacion: 6.61,
+        duracion: "3 temporadas",
+        elenco: ['Billy West', 'Mark Hamill', 'Andrea Martin', 'B.J. Ward'],
+        portada: "https://image.tmdb.org/t/p/original/fyfzAosiIAYGm9M4O7qFwuPDwCp.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/723",
+        fecha: "1999-05-08"
+    },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
