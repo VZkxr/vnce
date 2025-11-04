@@ -935,6 +935,45 @@ const catalogoPeliculas = [
         enlaceTelegram: "https://t.me/c/2990770379/723",
         fecha: "1999-05-08"
     },
+
+    {
+        titulo: "Mickey 17",
+        tipo: "Película",
+        sinopsis: `Mickey Barnes se encuentra en la extraordinaria circunstancia de trabajar para un empleador que exige el compromiso máximo con el trabajo… morir, para ganarse la vida.`,
+        genero: ['Ciencia ficción', 'Comedia', 'Aventura'],
+        calificacion: 6.9,
+        duracion: "137 min",
+        elenco: ['Robert Pattinson', 'Naomi Ackie', 'Steven Yeun', 'Mark Ruffalo', 'Toni Collette'],
+        portada: "https://image.tmdb.org/t/p/original/iOKu6Hf5atv3DuXBS0jBF3OYYdu.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/782",
+        fecha: "2025-02-28"
+    },
+
+    {
+        titulo: "El Chacal",
+        tipo: "Serie",
+        sinopsis: `El Chacal, un escurridizo y solitario asesino sin rival, se gana la vida trabajando para el mejor postor. Sin embargo, tras su último asesinato, su camino se cruza con el de una tenaz agente de inteligencia británica que empieza a seguirle la pista en una emocionante persecución a través de Europa, dejando un rastro de destrucción a su paso.`,
+        genero: ['Drama', 'Action & Adventure', 'Misterio'],
+        calificacion: 8.2,
+        duracion: "10 episodios",
+        elenco: ['Eddie Redmayne', 'Lashana Lynch', 'Eleanor Matsuura', 'Chukwudi Iwuji', 'Úrsula Corberó'],
+        portada: "https://image.tmdb.org/t/p/original/69LMkzR76BHqjQ43LW0KJo1g8RB.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/784",
+        fecha: "2024-11-07"
+    },
+
+    {
+        titulo: "Monstruos vs Aliens",
+        tipo: "Película",
+        sinopsis: `A Susan Murphy le cae encima un meteorito lleno de pringue espacial y crece rápidamente hasta los 15 metros de altura, la capturan y la encierran en una zona de contención secreta del gobierno. Susan se ve rodeada de otros monstruos encarcelados: el inteligente, aunque con cabeza de insecto, Dr. Cucaracha; el machote medio simio medio pez Eslabón; el gelatinoso e indestructible B.O.B.; y la larva de 100 metros llamada Insectosaurio...`,
+        genero: ['Animación', 'Familia', 'Aventura', 'Ciencia ficción'],
+        calificacion: 6.235,
+        duracion: "94 min",
+        elenco: ['Reese Witherspoon', 'Seth Rogen', 'Hugh Laurie', 'Rainn Wilson', 'Will Arnett'],
+        portada: "https://image.tmdb.org/t/p/original/qLmmfRyuRwUNkTNKlCrem1Gy7M0.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/794",
+        fecha: "2009-03-19"
+    },
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
