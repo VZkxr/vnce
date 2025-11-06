@@ -826,6 +826,28 @@ header {
     transform: none !important;
   }
 
+/* === AJUSTE TARJETAS CARRUSEL MÓVIL === */
+  .carrusel .tarjeta {
+    width: 140px; /* Reducido a 140px */
+  }
+
+  .carrusel .tarjeta img {
+    height: 196px; /* Reducido de 280px (para mantener proporción 1.4) */
+  }
+
+  .carrusel .contenido {
+    padding: 0.6rem; /* Padding ajustado */
+  }
+
+  .carrusel .contenido h3 {
+    font-size: 0.85rem; /* Reducido de 1rem */
+  }
+
+  .carrusel .contenido p {
+    font-size: 0.7rem; /* Reducido de 0.85rem */
+  }
+  /* === FIN AJUSTE TARJETAS CARRUSEL === */
+
   .footer {
     font-size: 0.8rem;
     padding: 0.8rem 0;

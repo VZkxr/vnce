@@ -940,7 +940,7 @@ const catalogoPeliculas = [
         titulo: "Mickey 17",
         tipo: "Película",
         sinopsis: `Mickey Barnes se encuentra en la extraordinaria circunstancia de trabajar para un empleador que exige el compromiso máximo con el trabajo… morir, para ganarse la vida.`,
-        genero: ['Ciencia ficción', 'Comedia', 'Aventura'],
+        genero: ['Ciencia ficción', 'Aventura'],
         calificacion: 6.9,
         duracion: "137 min",
         elenco: ['Robert Pattinson', 'Naomi Ackie', 'Steven Yeun', 'Mark Ruffalo', 'Toni Collette'],
@@ -973,6 +973,84 @@ const catalogoPeliculas = [
         portada: "https://image.tmdb.org/t/p/original/qLmmfRyuRwUNkTNKlCrem1Gy7M0.jpg",
         enlaceTelegram: "https://t.me/c/2990770379/794",
         fecha: "2009-03-19"
+    },
+
+    {
+        titulo: "Oppenheimer",
+        tipo: "Película",
+        sinopsis: `Película sobre el físico J. Robert Oppenheimer y su papel como desarrollador de la bomba atómica. Basada en el libro 'American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer' de Kai Bird y Martin J. Sherwin.`,
+        genero: ['Drama', 'Historia'],
+        calificacion: 8.046,
+        duracion: "181 min",
+        elenco: ['Cillian Murphy', 'Emily Blunt', 'Matt Damon', 'Robert Downey Jr.', 'Florence Pugh'],
+        portada: "https://image.tmdb.org/t/p/original/5t05uhX5ULn8Um2f1ZuznVvIffU.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/797",
+        fecha: "2023-07-19"
+    },
+
+    {
+        titulo: "Meteoro: La película",
+        tipo: "Película",
+        sinopsis: `Sigue las aventuras de Speed Racer, un corredor nato, nacido para pilotar. Es un piloto agresivo y, sobre todo, temerario. Su única competencia es el recuerdo de su hermano, el que fue su ídolo, el legendario Rex Racer, cuya muerte en una carrera ha dejado una meta que Speed siente la necesidad de cumplir. Speed siente una gran lealtad hacia el negocio familiar de las carreras llevado por su padre, Pops Racer, el diseñador del poderoso bólido Mach 5. Cuando Speed rechaza una oferta muy lucrativa y tentadora de las Industrias Royalton, no sólo hace enfurecer al maniático dueño de la empresa, además, descubre un terrible secreto: algunas de las carreras más importantes están siendo manipuladas por unos desalmados empresarios. Si Speed no pilota para la escudería de Royalton, éste se va a ocupar de que el Mach 5 nunca cruce otra meta. La única manera de que Speed pueda salvar el negocio de la familia y el deporte que ama es ganando a Royalton en su propio juego.`,
+        genero: ['Familia', 'Acción', 'Aventura'],
+        calificacion: 6.324,
+        duracion: "135 min",
+        elenco: ['Emile Hirsch', 'Christina Ricci', 'John Goodman', 'Susan Sarandon', 'Matthew Fox'],
+        portada: "https://image.tmdb.org/t/p/original/4CWRokYZGYpMZhyTGLzJc4jKacU.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/799",
+        fecha: "2008-05-07"
+    },
+
+    {
+        titulo: "Bright",
+        tipo: "Película",
+        sinopsis: `Ambientado en el presente alternativo donde criaturas mágicas viven entre humanos, dos policías de Los Ángeles, un humano y su compañero orco, se ven envueltos en una batalla territorial con un poderoso y mágico objetó.`,
+        genero: ['Fantasía', 'Acción'],
+        calificacion: 6.161,
+        duracion: "117 min",
+        elenco: ['Will Smith', 'Joel Edgerton', 'Lucy Fry', 'Noomi Rapace', 'Edgar Ramírez'],
+        portada: "https://image.tmdb.org/t/p/original/4xWEhLPlP9yg3DJbkKaBayBN98V.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/801",
+        fecha: "2017-12-22"
+    },
+
+    {
+        titulo: "Amar te duele",
+        tipo: "Película",
+        sinopsis: `La vida de Ulises da un giro inopinado cuando conoce a Renata, una muchacha asimismo de clase alta. Renata compra ropa con su amiga y cómplice «La Güera» y su hermana alcohólica más joven, Mariana; cuando de súbito cruza miradas seductoras con Ulises por medio de un escaparate.`,
+        genero: ['Drama', 'Romance'],
+        calificacion: 7.982,
+        duracion: "104 min",
+        elenco: ['Luis Fernando Peña', 'Martha Higareda', 'Ximena Sariñana', 'Alfonso Herrera', 'Armando Hernández'],
+        portada: "https://image.tmdb.org/t/p/original/wK5UVMVjWMLV71SLpCjUFrO8mHI.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/803",
+        fecha: "2002-11-08"
+    },
+
+    {
+        titulo: "Cinema Paradiso",
+        tipo: "Película",
+        sinopsis: `En los años previos a la llegada de la televisión (justo después del final de la Segunda Guerra Mundial), en un pequeño pueblo siciliano, el joven Toto vivía fascinado por el cine. Toto trata de entablar amistad con Alfredo, el proyeccionista del cine local, una persona muy irritable pero con un gran corazón. Todos estos hechos se presentan en forma de nostálgicos recuerdos de Toto que ha crecido hasta convertirse en un cineasta de éxito, y que revive a su infancia cuando recibe la noticia de que Alfredo ha muerto.`,
+        genero: ['Drama', 'Romance'],
+        calificacion: 8.4,
+        duracion: "124 min",
+        elenco: ['Philippe Noiret', 'Jacques Perrin', 'Marco Leonardi', 'Salvatore Cascio', 'Agnese Nano'],
+        portada: "https://image.tmdb.org/t/p/original/hHwsr3t5n7VVUbPyU8VZswn0jkL.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/807",
+        fecha: "1988-11-17"
+    },
+
+    {
+        titulo: "Chiquito Pero Peligroso",
+        tipo: "Película",
+        sinopsis: `En esta divertida comedia, las grandes sorpresas llegan en paquete pequeño. Darryl Edwards (Shawn Wayans) tiene tantas ganas de ser padre que confunde a Calvin Sims (Marlon Wayans), un ladrón prófugo de la justicia, que es bajito y con cara de bebé, con un niño abandonado. Darryl y su mujer acogen al “bebé” en su casa mientras Percy P (Tracy Morgan), el socio del ladrón, intenta ayudarle a recuperar un diamante robado.  Él y su esposa recogen al bebé llevándolo a su hogar mientras que el socio del ladrón Percy P. (Tracy Morgan) trata de ayudarlo a recuperar un diamante robado...`,
+        genero: ['Comedia', 'Crimen'],
+        calificacion: 5.9,
+        duracion: "98 min",
+        elenco: ['Marlon Wayans', 'Shawn Wayans', 'Kerry Washington', 'John Witherspoon', 'Tracy Morgan'],
+        portada: "https://image.tmdb.org/t/p/original/7oWhgp3SHexU9Byx97U7Sc8uroW.jpg",
+        enlaceTelegram: "https://t.me/c/2990770379/809",
+        fecha: "2006-08-31"
     },
 ];
 
