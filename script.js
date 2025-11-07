@@ -1,28 +1,15 @@
 // === CARGADOR DE DATOS ===
 // Usamos fetch para cargar el JSON. Esto devuelve una "promesa".
-const dataPromise = fetch('datos.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    return response.json();
-  })
-  .catch(e => {
+const dataPromise = fetch('datos.json').then(response => {
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`);
+  }
+  return response.json();
+}).catch(e => {
     console.error('No se pudo cargar el archivo datos.json:', e);
     // Devuelve un array vacío en caso de error para que la app no se rompa
-    return []; 
-  });
-
-
-// === MENU HAMBURGUESA ===
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-
-if (hamburger && navLinks) {
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-}
+    return [];
+});
 
 // === HERO (solo si existe en la página) ===
 const heroCarrusel = document.querySelector(".hero-carrusel");

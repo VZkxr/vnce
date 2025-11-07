@@ -970,5 +970,17 @@
         "portada": "https://image.tmdb.org/t/p/original/cQuuBjG78j4b2r1dFpAjnjbUplv.jpg",
         "enlaceTelegram": "https://t.me/c/2990770379/828",
         "fecha": "2014-11-05"
+    },
+    {
+        "titulo": "Demon Slayer: Kimetsu no Yaiba",
+        "tipo": "Serie",
+        "sinopsis": "Tanjirō Kamado es un chico que se unió a una organización dedicada a cazar demonios después de que su hermana menor, Nezuko, fuera convertida. Mientras los miembros de la organización y los Pilares participaban en un programa de entrenamiento grupal, como preparación para la inminente batalla contra los demonios, Muzan Kibutsuji aparece en la Mansión Ubuyashiki. Con el jefe de la organización en peligro, Tanjirō y los Pilares corren hacia la mansión, pero son arrastrados a un espacio misterioso por obra de Kibutsuji. El lugar al que han caído Tanjirō y los cazadores es el bastión de los demonios: el Castillo Infinito. Así, el campo de batalla queda establecido para dar fin a la guerra entre humanos y demonios.",  
+        "genero": ["Animación", "Fantasía"],
+        "calificacion": 7.8,
+        "duracion": "155 min",
+        "elenco": ["花江夏樹", "下野紘", "櫻井孝宏", "石田彰", "松岡禎丞"],   
+        "portada": "https://image.tmdb.org/t/p/original/6N21gcFbhT4ocdTU4MGREAaM5Vz.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/831",
+        "fecha": "2025-07-18"
     }
 ]

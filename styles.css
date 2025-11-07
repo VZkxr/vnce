@@ -309,21 +309,6 @@ header {
   transform: scale(1.15);
 }
 
-/* === HAMBURGUESA === */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  border-radius: 2px;
-}
-
 /* === CARRUSEL === */
 .carrusel-container {
   position: relative;
