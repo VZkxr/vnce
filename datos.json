@@ -958,5 +958,17 @@
         "portada": "https://image.tmdb.org/t/p/original/cPSmob9PGE2O4DE0PHaaqgwDrVg.jpg",
         "enlaceTelegram": "https://t.me/c/2990770379/826",
         "fecha": "2000-05-19"
+    },
+    {
+        "titulo": "Interestelar",
+        "tipo": "Película",
+        "sinopsis": "Cooper y un grupo de exploradores utilizan un agujero de gusano recién descubierto para superar las limitaciones de los viajes espaciales humanos y conquistar las vastas distancias que implica un viaje interestelar.",
+        "genero": ["Aventura", "Drama", "Ciencia ficción"],
+        "calificacion": 8.5,
+        "duracion": "169 min",
+        "elenco": ["Matthew McConaughey", "Anne Hathaway", "Michael Caine", "Jessica Chastain", "Casey Affleck"],
+        "portada": "https://image.tmdb.org/t/p/original/cQuuBjG78j4b2r1dFpAjnjbUplv.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/828",
+        "fecha": "2014-11-05"
     }
 ]
