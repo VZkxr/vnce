@@ -982,5 +982,53 @@
         "portada": "https://image.tmdb.org/t/p/original/6N21gcFbhT4ocdTU4MGREAaM5Vz.jpg",
         "enlaceTelegram": "https://t.me/c/2990770379/831",
         "fecha": "2025-07-18"
+    },
+    {
+        "titulo": "Juego sucio",
+        "tipo": "Película",
+        "sinopsis": "Parker es un experto ladrón, muy profesional en lo suyo, que elabora sus golpes con una ética de trabajo clara y directa. Junto con Grofield, Zen y un equipo experto, todos se toparán con un robo que los enfrenta a la mafia de Nueva York.",
+        "genero": ["Crimen"],
+        "calificacion": 6.6,
+        "duracion": "125 min",
+        "elenco": ["Mark Wahlberg", "LaKeith Stanfield", "Rosa Salazar", "Keegan-Michael Key", "Chukwudi Iwuji"],
+        "portada": "https://image.tmdb.org/t/p/original/tFWFcc2DlAp02oyj3eCfxF220l3.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/898",
+        "fecha": "2025-09-30"
+    },
+    {
+        "titulo": "Tron",
+        "tipo": "Película",
+        "sinopsis": "Trás hackear la computadora de su exempleador, el creador de videojuegos Kevin Flynn se teletransporta en un asombroso mundo digital. Cómo forma parte del juego, su misión es enfrentarse a un maniático Programa de Control Maestro y aliarse con Tron, un programa de seguridad.",
+        "genero": ["Ciencia ficción", "Acción", "Aventura"],
+        "calificacion": 6.6,
+        "duracion": "96 min",
+        "elenco": ["Jeff Bridges", "Bruce Boxleitner", "David Warner", "Cindy Morgan", "Barnard Hughes"],
+        "portada": "https://image.tmdb.org/t/p/original/mfLMawRqFSqlCJkKkTaQjrURdCI.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/903",
+        "fecha": "1982-07-09"
+    },
+    {
+        "titulo": "Tron: El Legado",
+        "tipo": "Película",
+        "sinopsis": "En un intento de descubrir la desaparición de su padre, el audaz Sam Flynn logra ingresar a un mundo digital. Acompañado de Quorra, Sam emprende una misión para impedir los planes del malvado dictador Clu.",
+        "genero": ["Aventura", "Acción", "Ciencia ficción"],
+        "calificacion": 6.5,
+        "duracion": "125 min",
+        "elenco": ["Garrett Hedlund", "Olivia Wilde", "Jeff Bridges", "Bruce Boxleitner", "James Frain"],
+        "portada": "https://image.tmdb.org/t/p/original/oImEJEbwvhf00tY8SXapLr9vPnP.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/903",
+        "fecha": "2010-12-14"
+    },
+    {
+        "titulo": "TRON: Ares",
+        "tipo": "Película",
+        "sinopsis": "Un programa altamente sofisticado llamado Ares es enviado del mundo digital al mundo real en una misión peligrosa, marcando el primer encuentro de la humanidad con seres de IA.",
+        "genero": ["Ciencia ficción", "Aventura", "Acción"],
+        "calificacion": 6.3,
+        "duracion": "120 min",
+        "elenco": ["Jared Leto", "Greta Lee", "Evan Peters", "Gillian Anderson", "Jodie Turner-Smith"],
+        "portada": "https://image.tmdb.org/t/p/original/qShQABLVRMZKnv5mWOPXWniBeB3.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/903",
+        "fecha": "2025-10-08"
     }
 ]
