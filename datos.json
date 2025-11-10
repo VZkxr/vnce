@@ -1030,5 +1030,65 @@
         "portada": "https://image.tmdb.org/t/p/original/qShQABLVRMZKnv5mWOPXWniBeB3.jpg",
         "enlaceTelegram": "https://t.me/c/2990770379/903",
         "fecha": "2025-10-08"
+    },
+    {
+        "titulo": "Shrek",
+        "tipo": "Película",
+        "sinopsis": "Un malvado lord exilia a las criaturas de cuentos de hadas al pantano de un ogro gruñón, que debe ir en busca y rescatar a una princesa para el lord con el fin de recuperar su tierra.",
+        "genero": ["Animación", "Comedia", "Fantasía", "Aventura", "Familia"],
+        "calificacion": 7.752,
+        "duracion": "90 min",
+        "elenco": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "John Lithgow", "Vincent Cassel"],
+        "portada": "https://image.tmdb.org/t/p/original/5G1RjHMSt7nYONqCqSwFlP87Ckk.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/918",
+        "fecha": "2001-05-18"
+    },
+    {
+        "titulo": "Shrek 2",
+        "tipo": "Película",
+        "sinopsis": "Shrek y Fiona viajan al Reino de Muy Muy Lejano, donde los padres de Fiona son el Rey y la Reina, para celebrar su matrimonio. Cuando llegan, se dan cuenta de que no son tan bienvenidos como pensaban.",
+        "genero": ["Animación", "Familia", "Comedia", "Fantasía", "Aventura", "Romance"],
+        "calificacion": 7.303,
+        "duracion": "93 min",
+        "elenco": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "Julie Andrews", "Antonio Banderas"],
+        "portada": "https://image.tmdb.org/t/p/original/knRt4E8KyfwEv0SVu9LsLvD28IQ.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/918",
+        "fecha": "2004-05-19"
+    },
+    {
+        "titulo": "Shrek Tercero",
+        "tipo": "Película",
+        "sinopsis": "Designado a regañadientes como el heredero de la tierra de Muy Muy Lejano, Shrek urde un plan para instalar al rebelde Artie como el nuevo rey mientras la princesa Fiona trata de evitar un golpe de estado por parte del Príncipe Encantador.",
+        "genero": ["Fantasía", "Aventura", "Animación", "Comedia", "Familia"],
+        "calificacion": 6.298,
+        "duracion": "93 min",
+        "elenco": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "Antonio Banderas", "Julie Andrews"],
+        "portada": "https://image.tmdb.org/t/p/original/7sTwtmVPTX77CFOUXdwAM7lKtKL.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/918",
+        "fecha": "2007-05-17"
+    },
+    {
+        "titulo": "Shrek 4: Para Siempre",
+        "tipo": "Película",
+        "sinopsis": "Rumpelstiltskin engaña a un Shrek agobiado por la crisis de la mediana edad para que se deje borrar de la existencia y sea trasladado a una oscura línea temporal alternativa en la que Rumpelstiltskin gobierna de forma suprema.",
+        "genero": ["Comedia", "Aventura", "Fantasía", "Animación", "Familia"],
+        "calificacion": 6.39,
+        "duracion": "94 min",
+        "elenco": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "Antonio Banderas", "Walt Dohrn"],
+        "portada": "https://image.tmdb.org/t/p/original/3MyKXb1ozCfq61tPNKpIggwvP6J.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/918",
+        "fecha": "2010-05-20"
+    },
+    {
+        "titulo": "El club de los cinco",
+        "tipo": "Película",
+        "sinopsis": "Cinco estudiantes de distinta educación, formación y gustos son castigados a pasar un sábado en el instituto en el que estudian. Pronto las desavenencias entre ellos aparecen, especialmente cuando el director que les vigila se ausenta del aula.",     
+        "genero": ["Comedia", "Drama"],
+        "calificacion": 7.729,
+        "duracion": "98 min",
+        "elenco": ["Emilio Estevez", "Judd Nelson", "Molly Ringwald", "Anthony Michael Hall", "Ally Sheedy"],
+        "portada": "https://image.tmdb.org/t/p/original/f0DhsS50Ksn6rBZhwsH9Rgh9xGi.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/923",
+        "fecha": "1985-02-15"
     }
 ]
