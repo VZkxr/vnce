@@ -1047,7 +1047,7 @@
         "titulo": "Shrek 2",
         "tipo": "Película",
         "sinopsis": "Shrek y Fiona viajan al Reino de Muy Muy Lejano, donde los padres de Fiona son el Rey y la Reina, para celebrar su matrimonio. Cuando llegan, se dan cuenta de que no son tan bienvenidos como pensaban.",
-        "genero": ["Animación", "Familia", "Fantasía", "Aventura", "Romance"],
+        "genero": ["Animación", "Familia", "Fantasía", "Aventura"],
         "calificacion": 7.3,
         "duracion": "93 min",
         "elenco": ["Mike Myers", "Eddie Murphy", "Cameron Diaz", "Julie Andrews", "Antonio Banderas"],
@@ -1102,5 +1102,17 @@
         "portada": "https://image.tmdb.org/t/p/original/zUqNyXRfYkFAFXsqJJjKMZpjYus.jpg",
         "enlaceTelegram": "https://t.me/c/2990770379/928",
         "fecha": "2013-09-12"
+    },
+    {
+        "titulo": "Greyhound en la mira del enemigo",
+        "tipo": "Película",
+        "sinopsis": "El capitán Krause atraviesa el Atlántico al mando de un convoy internacional de 37 naves en una peligrosa misión para llevar soldados y provisiones a las Fuerzas Aliadas.",
+        "genero": ["Bélica", "Acción"],
+        "calificacion": 7.4,
+        "duracion": "92 min",
+        "elenco": ["Tom Hanks", "Stephen Graham", "Rob Morgan", "Josh Wiggins", "Tom Brittney"],
+        "portada": "https://image.tmdb.org/t/p/original/qHmGs4uAIOdPgseCgOH0eEsmTKD.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/951",
+        "fecha": "2020-07-09"
     }
 ]
