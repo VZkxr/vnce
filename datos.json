@@ -1114,5 +1114,77 @@
         "portada": "https://image.tmdb.org/t/p/original/qHmGs4uAIOdPgseCgOH0eEsmTKD.jpg",
         "enlaceTelegram": "https://t.me/c/2990770379/951",
         "fecha": "2020-07-09"
+    },
+    {
+        "titulo": "Asobi Asobase: workshop of fun",
+        "tipo": "Serie",
+        "sinopsis": "Esta comedia gira en torno a tres compañeras de clase que juegan juegos de manos simples. Una de las chicas es buena en los juegos, pero detesta que siempre perdió contra su hermana mayor y por ello se vio obligada a hacer las tareas domésticas mientras crecía. Otra niña es de ascendencia estadounidense, pero criada en Japón, y que solo finge ser mala con el japonés. Otra chica suele observar a las dos primeras jugar y pierde siempre contra ellas.",
+        "genero": ["Animación"],
+        "calificacion": 8.4,
+        "duracion": "12 episodios",
+        "elenco": ["小原好美", "長江里加", "木野日菜", "伊沢磨紀"],
+        "portada": "https://image.tmdb.org/t/p/original/pcTqaeuFG5rzdeHbSEc7HBysPQ7.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/974",
+        "fecha": "2018-07-08"
+    },
+    {
+        "titulo": "Cruella",
+        "tipo": "Película",
+        "sinopsis": "\"Cruella\" se sumerge en la juventud rebelde de uno de los villanos más conocidos -y más de moda-, nada menos que la legendaria Cruella de Vil. Emma Stone encarna a Estella, alias Cruella, junto a Emma Thompson como la Baronesa, la directora de una prestigiosa firma de moda que convierte a Estella en una incipiente diseñadora. La cinta está ambientada en el contexto del punk-rock londinense de los 70.",
+        "genero": ["Comedia", "Crimen", "Aventura"],
+        "calificacion": 7.9,
+        "duracion": "134 min",
+        "elenco": ["Emma Stone", "Emma Thompson", "Joel Fry", "Paul Walter Hauser", "John McCrea"],
+        "portada": "https://image.tmdb.org/t/p/original/tNFBP5OTmKm7CTc5ptUwgmepd8G.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/988",
+        "fecha": "2021-05-26"
+    },
+    {
+        "titulo": "Nacho Libre",
+        "tipo": "Película",
+        "sinopsis": "Nacho es un hombre sin talento. Se crió en un monasterio en México del que ahora es el cocinero, pero no parece encajar. Nacho quiere a los huérfanos para los que cocina, pero todo lo que hace sabe fatal. Según él, porque tiene una pésima materia prima. Se da cuenta de que debe ingeniárselas para cocinar algo mejor para los pobres huérfanos (y de paso, impresionar a la preciosa hermana Encarnación). Se le ocurre la idea de ganar dinero convirtiéndose en luchador de lucha libre y descubre que tiene un don innato.",
+        "genero": ["Comedia"],
+        "calificacion": 6.506,
+        "duracion": "92 min",
+        "elenco": ["Jack Black", "Ana de la Reguera", "Héctor Jiménez", "Darius Rose", "Moisés Arias"],
+        "portada": "https://image.tmdb.org/t/p/original/uU6ZEMgsnDlHXLgkppJxRuzMOeh.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/990",
+        "fecha": "2006-06-16"
+    },
+    {
+        "titulo": "Nerve: Un juego sin reglas",
+        "tipo": "Película",
+        "sinopsis": "La diligente estudiante de secundaria, Vee Delmonico, se harta de vivir la vida desde el margen. Cuando sus amigos la presionan para que se una al popular juego en línea Nerve, Vee decide apuntarse por un reto de lo que parece diversión inofensiva. Pero a medida que se ve atrapada por la emoción de esta competencia adenalínica, el juego comienza a dar un giro siniestro con actos cada vez más peligrosos, lo que la lleva a una final de alto riesgo que determinará todo su futuro.",
+        "genero": ["Drama", "Acción", "Crimen"],
+        "calificacion": 7.0,
+        "duracion": "96 min",
+        "elenco": ["Emma Roberts", "Dave Franco", "Emily Meade", "Miles Heizer", "Juliette Lewis"],
+        "portada": "https://image.tmdb.org/t/p/original/bdKOmmHz0PvXISiAeBIWDFHw2WV.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/995",
+        "fecha": "2016-06-27"
+    },
+    {
+        "titulo": "Nueve",
+        "tipo": "Película",
+        "sinopsis": "Aventura post-apocalíptica protagonizada por nueve muñecos de trapo que deberán enfrentarse a unas máquinas gigantes si quieren preservar el futuro de la civilización. La historia transcurre en un futuro muy próximo. El invento conocido como la Gran Máquina activa y aporta energía a las máquinas que se han alzado contra la raza humana, diezmando a la población, antes de empezar a apagarse. El mundo pronto quedará destruido, pero un grupo de pequeños seres intenta salvar lo poco que queda de la civilización.",
+        "genero": ["Animación"],
+        "calificacion": 6.9,
+        "duracion": "79 min",
+        "elenco": ["Elijah Wood", "Christopher Plummer", "Martin Landau", "John C. Reilly", "Crispin Glover"],
+        "portada": "https://image.tmdb.org/t/p/original/mu1zDw4qxlUzrBizasO24unC766.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/998",
+        "fecha": "2009-08-19"
+    },
+    {
+        "titulo": "Spirit: El corcel indomable",
+        "tipo": "Película",
+        "sinopsis": "Sigue las aventuras de un corcel salvaje e ingobernable que recorre la indómita frontera norteamericana. Cuando encuentra a un hombre por primera vez, un joven de la tribu de los Lakota llamado Little Creek, Spirit se niega a dejarse domar por él pero sí se hace amigo suyo. El valiente corcel también encuentra el amor con una hermosa yegua llamada Rain. Spirit se convertirá en uno de los grandes héroes anónimos del Viejo Oeste.",
+        "genero": ["Animación", "Aventura", "Familia"],
+        "calificacion": 7.684,
+        "duracion": "85 min",
+        "elenco": ["Matt Damon", "James Cromwell", "Daniel Studi", "Chopper Bernet", "Jeff LeBeau"],
+        "portada": "https://image.tmdb.org/t/p/original/gNRQdU3KEsYTIl4y9Xte3onUSsx.jpg",
+        "enlaceTelegram": "https://t.me/c/2990770379/1001",
+        "fecha": "2002-05-24"
     }
 ]
